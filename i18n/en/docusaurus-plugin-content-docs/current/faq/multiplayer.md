@@ -33,7 +33,7 @@ This mod is similar to e4mc, but uses the [Ngrok](https://ngrok.com/) service to
 ### LAN Extender {#mods-lan-extender}
 Download: [Modrinth](https://modrinth.com/mod/lan-extender)
 
-Analog of NgrokLAN mod, also uses [Ngrok](https://ngrok.com/) service, but easier to set up. On [mod page](https://modrinth.com/mod/ngrok-lan) there is a detailed instruction with pictures.
+NgrokLAN alternative, also uses [Ngrok](https://ngrok.com/) service, but easier to set up. There's a detailed instruction with pictures on the [mod page](https://modrinth.com/mod/lan-extender).
 
 ### LAN World Plug-n-Play {#mods-lan-plug-n-play}
 Download: [Modrinth](https://modrinth.com/mod/mcwifipnp)
