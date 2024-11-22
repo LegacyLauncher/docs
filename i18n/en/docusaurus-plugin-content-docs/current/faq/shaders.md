@@ -17,7 +17,7 @@ Shaderpacks might be referred to as shaders in the following guide.
    :::note
    This will create a new folder called `shaderpacks` in the Minecraft game directory.
    :::
-3. Download shaders from websites such as [Modrinth](https://modrinth.com/shaders) or [CurseForge](https://www.curseforge.com/minecraft/search?class=shaders)
+3. Download shaders from websites such as [Modrinth](https://modrinth.com/shaders) or [CurseForge](https://www.curseforge.com/minecraft/search?class=shaders).
 4. Move the downloaded shaders to the new `shaderpacks` folder in the Minecraft game directory.
    :::info[Opening the Minecraft game directory]
    i. Click on the folder icon in Legacy Launcher.
