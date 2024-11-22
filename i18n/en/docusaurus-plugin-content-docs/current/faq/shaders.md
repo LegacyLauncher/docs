@@ -23,23 +23,25 @@ Shaderpacks might be referred to as shaders in the following guide.
    i. Click on the folder icon in Legacy Launcher.
       ![Folder icon](./img/folder-button.png)
    ii. Click on `Open version-name directory`.
+   
       ![Open version directory](../mods/img/mods_openclientdir.png)
    :::
    :::tip
    Some shader mods allow you to "drag" a new shaderpack to `Shader Packs` in-game menu instead.
    :::
-5. Run Minecraft (if closed) and click on `Options`
+6. Run Minecraft (if closed) and click on `Options`
    ![Options](./img/mc-options.png)
-6. Click `Video Settings`
+7. Click `Video Settings`
    ![Video Settings](./img/vid-settings.png)
    :::note
    After installing most shaders mods, there will be a new `Video Settings` layout. This confirms that shaders mod is working.
    :::
-7. Click on the new `Shader Packs` button.
+8. Click on the new `Shader Packs` button.
+   
    ![Shader Packs button](./img/shaderpacks-button.png)
-8. Click on `Shaders: Disabled` to enable shaders. (Ignore if already enabled)
+10. Click on `Shaders: Disabled` to enable shaders. (Ignore if already enabled)
     ![Enable shaders](./img/enable-shaders.png)
-9. Click on the shader you want to enable (in this case `AstraLex Shaders`) and click on `Apply`.
+11. Click on the shader you want to enable (in this case `AstraLex Shaders`) and click on `Apply`.
     ![AstraLex Shaders enable](./img/shaders-enabled.png)
-10. Click on `Done`.
+12. Click on `Done`.
     ![Done button](./img/done-iris.png)
