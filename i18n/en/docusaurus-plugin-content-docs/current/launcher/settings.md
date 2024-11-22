@@ -2,20 +2,17 @@
 description: Detailed description of all launcher preferences
 ---
 # Launcher preferences
-:::info
-This page requires localization of screenshots. Feel free to [open PR](https://github.com/LegacyLauncher/docs) if you want to help
-:::
 
 ## How do I access the launcher preferences? {#accessing}
 1. Click the "Preferences" button (one with three stripes)
-    ![Preferences button](./img/open-settings-1.png)
+    ![Preferences button](./img/menu-open-en.png)
 2. Select the "Launcher & game preferences" item
-    ![Launcher & game preferences](./img/open-settings-2.png)
+    ![Launcher & game preferences](./img/preferences-button-en.png)
 
 ## Preferences description {#description}
 ### "Minecraft" tab {#minecraft}
 * **Directory**: game data folder path
-    * You can enable [**Subfolders feature**](./subfolders)
+    * You can enable [**Subfolders feature**](./subfolders.md)
 * **Resolution**: game window size at startup
     :::note
     This setting does not affect the fullscreen resolution
@@ -40,7 +37,7 @@ This page requires localization of screenshots. Feel free to [open PR](https://g
 * **Java/JRE**: select the Java version used to launch the game
     * **Recommended**: Launcher will automatically download and use the *Mojang recommended* Java version
         :::tip
-        You can [customize](../faq/custom-java) these versions
+        You can [customize](../faq/custom-java.md) these versions
         :::
     * **Current only**: Launcher will use the same Java executable used for starting the launcher
     * **Custom**: Select custom java by providing a path to `bin/java` or `javaw.exe` JRE executable
