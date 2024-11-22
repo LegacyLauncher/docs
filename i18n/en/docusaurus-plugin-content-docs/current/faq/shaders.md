@@ -34,7 +34,7 @@ Shaderpacks might be referred to as shaders in the following guide.
 7. Click `Video Settings`
    ![Video Settings](./img/vid-settings.png)
    :::note
-   After installing most shaders mods, there will be a new `Video Settings` layout. This confirms that shaders mod is working.
+   After installing most shader mods, there will be a new `Video Settings` layout. This confirms that the shader mod is working.
    :::
 8. Click on the new `Shader Packs` button.
    
