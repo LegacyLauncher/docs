@@ -9,7 +9,7 @@ sidebar_position: 3
 Shaderpacks might be referred to as shaders in the following guide.
 :::
 
-1. Install selected [shader mod](./optifine-alternatives.md#shaders) or [OptiFine](../mods/optifine.md). You may need a [modloader](/tags/modloader)
+1. Install selected [shader mod](./optifine-alternatives.md#shaders) or [OptiFine](../mods/optifine.md). You may need a [modloader](/tags/modloader).
    :::warning
    OptiFine is a highly unstable mod. We do not recommend using it with other mods. Try [alternatives](./optifine-alternatives.md#shaders) instead.
    :::
@@ -43,5 +43,9 @@ Shaderpacks might be referred to as shaders in the following guide.
     ![Enable shaders](./img/enable-shaders.png)
 11. Click on the shader you want to enable (in this case `AstraLex Shaders`) and click on `Apply`.
     ![AstraLex Shaders enable](./img/shaders-enabled.png)
+    :::note
+    This will make the selected shader highlighted in yellow.
+    :::
 12. Click on `Done`.
+    
     ![Done button](./img/done-iris.png)
