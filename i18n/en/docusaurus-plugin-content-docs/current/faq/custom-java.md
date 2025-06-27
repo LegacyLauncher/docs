@@ -4,7 +4,7 @@ description: How to customize Java
 # Using custom Java versions
 Legacy Launcher uses Mojang's recommended Java builds by Microsoft. This guide will help you to replace these Java versions with the ones of your choice.
 :::info
-This page requires localization of screenshots. Feel free to [open PR](https://github.com/LegacyLauncher/docs) if you want to help
+This page requires localization of screenshots. Feel free to [open a PR](https://github.com/LegacyLauncher/docs) if you want to help
 :::
 
 ## How to? {#how-to}
