@@ -1,7 +1,7 @@
 ---
 description: Launcher asks to check internet connection?
 ---
-# Legacy exe issues
+# Outdated version issues
 :::info
 This page requires localization of screenshots. Feel free to [open PR](https://github.com/LegacyLauncher/docs) if you want to help
 :::
@@ -12,30 +12,30 @@ This page requires localization of screenshots. Feel free to [open PR](https://g
 ```mdx-code-block
 </div>
 ```
-"Cannot find bootstrap"? "No available JRE"? "Please check Internet connection"? There is a window with "Launching" and it does not close?  
-That's because you're using **outdated exe**.
+"Cannot find bootstrap"? "No available JRE"? "Please check Internet connection"? Is there a window with "Launching" and it doesn't close?  
+That's because you're using an **outdated version** of Legacy Launcher.
 
 ## Solution {#solution}
-Install up-to-date version from [the our website](https://llaun.ch) or [the mirror](https://lln4.ru)
+Install an up-to-date version from [our website](https://llaun.ch) or [the mirror](https://ru1.lln4.ru).
 
-## Will I loose all my worlds, mods, accounts? {#user-data}
-No. But you can create a backup copy just to be sure.
+## Will I lose all my worlds, mods, accounts? {#user-data}
+No, but you can create a backup copy just to be sure.
 
 ## I installed the update, and all my data is lost! {#data-missing}
-Your data is not lost. You should select previously used game folder in launcher settings or move all files to new game folder.
+Your data is not lost. You should select the previously used game folder in the launcher settings or move all the files to the new game folder.
 
 ## I'm using a Portable Client, what should I do? {#portable}
-Download up-to-date portable client from the [out website](https://llaun.ch/portable) or [the mirror](https://lln4.ru/portable) and move all your data to new client.
+Download an up-to-date portable client from [our website](https://llaun.ch/portable) or [the mirror](https://ru1.lln4.ru/portable) and move all your data to the new client.
 :::tip
-You may find [our portable client manual](../launcher/portable) useful
+You may find [our portable client manual](../launcher/portable) useful.
 :::
 
-## I'm using a MineModPacks modpack, what should I do? {#minemodpacks}
-1. Remove old exe from client folder and `.pbargs` file
-2. Download up-to-date portable client from the [out website](https://llaun.ch/portable) or [the mirror](https://lln4.ru/portable)
-3. Move all files from new portable client to modpack folder, confirm overwriting if necessary
+## I'm using the MineModPacks modpack, what should I do? {#minemodpacks}
+1. Remove the old version from client folder and `.pbargs` file
+2. Download an up-to-date portable client from [our website](https://llaun.ch/portable) or [the mirror](https://ru1.lln4.ru/portable)
+3. Move all the files from the new portable client to the modpack folder, confirm overwriting if necessary
 4. Open `tl.args` file with any text editor (e.g. [Notepad++](https://notepad-plus-plus.org/downloads/)) and replace its content with following:
-    ```bash title="tl.args"
+    ``` title="tl.args"
     --packageMode
     portable
     --targetJar
@@ -54,5 +54,5 @@ You may find [our portable client manual](../launcher/portable) useful
     ```
 5. All is done! Your modpack should be able to launch now.
     :::warning
-    If this guide does not help you may try to move all game files (mods, configs, scripts, versions) to new portable client or ask [MineModPacks owner](https://minemodpacks.ru/%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F#%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B) for help
+    If this guide does not help you may try to move all the game files (mods, configs, scripts, versions) to the new portable client or ask the [MineModPacks owner](https://minemodpacks.ru/%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F#%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B) for help.
     :::
