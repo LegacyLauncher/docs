@@ -2,7 +2,7 @@
 description: About technical support for users with cheats
 ---
 # Cheats
-:::info[Legacy Launcher developers do not encourage cheats]
+:::info[Legacy Launcher developers do not encourage cheats.]
 :::
 
 ## Is your launcher for cheaters? {#cheat-launcher}
