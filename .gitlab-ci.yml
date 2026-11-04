@@ -3,6 +3,11 @@ build:
   services:
     - name: docker:dind
       alias: docker
+  variables:
+    # Docker 29.7+ fails to push attestation manifests to the GitLab registry
+    # ("blob unknown to registry"): https://github.com/moby/moby/issues/53293,
+    # https://gitlab.com/gitlab-org/container-registry/-/work_items/2367. Remove once fixed.
+    BUILDX_NO_DEFAULT_ATTESTATIONS: "1"
   script:
     - echo "$CI_REGISTRY_PASSWORD" | docker login $CI_REGISTRY -u $CI_REGISTRY_USER --password-stdin
     - >
