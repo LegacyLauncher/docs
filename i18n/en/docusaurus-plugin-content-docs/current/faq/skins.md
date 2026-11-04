@@ -28,7 +28,7 @@ sidebar_position: 1
     :::warning[Capes]
     Ely.by Skinsystem does not support capes
     :::
-4. Log into this Ely.by in Legacy Launcher
+4. Log into this Ely.by account in Legacy Launcher
     1. Click account (nickname) selection menu
     2. Select "account manager"
     3. Press the "+" button
@@ -41,7 +41,7 @@ sidebar_position: 1
 
 ## Skin aint' working? {#troubleshooting}
 * You may need to restart the game after installing a new skin
-* Players with Minecraft Premium wont see the skins of players without Minecraft Premium
+* Players with Minecraft Premium won't see the skins of players without Minecraft Premium
     * Some servers may fix it with plugins
 * Players with the Ely.by Skinsystem will see the skins of other Ely.by users and Minecraft Premium players
     * Ely.by skins will be visible **only** to users of Ely.by Skinsystem.

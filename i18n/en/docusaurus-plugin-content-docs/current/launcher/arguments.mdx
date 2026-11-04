@@ -21,7 +21,7 @@ The *prebootstrap* arguments can be passed directly when running from the comman
 | `--bootstrap <path>`    | Path to launcher `bootstrap.jar` file                                                                                      |
 | `--jreDir <path>`       | JRE storage path                                                                                                           |
 | `--jre <value>`         | JRE name to use for launching the bootstrap (allowed values: `win64`, `win86`, `win64_jre8u45`, `win86_jre8u45`)           |
-| `--skipBootstrapUpdate` | Skip `bootstrap.jar` update and ingegrity checks                                                                           |
+| `--skipBootstrapUpdate` | Skip `bootstrap.jar` update and integrity checks                                                                           |
 
 ## Bootstrap arguments {#bootstrap}
 **Bootstrap** prepares the environment for the launcher, essentially being a launcher for the launcher. Its arguments file can be used to set the basic settings of the launcher. This is the main jar file of the launcher used to start it.  
@@ -39,7 +39,7 @@ Arguments for *Bootstrap* can be passed either through the `tl.args` file or thr
 | `--packageMode <mode>`              | `-Dtlauncher.bootstrap.packageMode=<mode>`           | Enables compatibility mode with various types of portable clients (`windows`, `aur`, `dmg`, …)                                                            |
 | `--updateMetaFile <path>`           | `-Dtlauncher.bootstrap.updateMetaFile=<path>`        | Specifies the path to the pre-downloaded update file (`bootstrap.json.mgz.signed`). **File must be signed with the private key of the launcher developer**. |
 | `--restartExec <file>`              | `-Dtlauncher.bootstrap.restartExec=<file>`           | Enables the "restart after an update" feature: specify the path to the executable file (e.g. `restart.sh`).                                               |
-| `--` | *not applicable* | Separates Bootstrap arguments and Launcher arguments. All arguments passed after `--` considered to be a launcher arguments. |
+| `--` | *not applicable* | Separates Bootstrap arguments and Launcher arguments. All arguments passed after `--` are considered launcher arguments. |
 
 ## Launcher Arguments {#launcher}
 :::info[ Applies to Legacy Launcher 159.0 or newer]
@@ -54,10 +54,10 @@ Arguments for *Bootstrap* can be passed either through the `tl.args` file or thr
 | `--javaargs <arguments>`        | Sets the Java arguments. Blocks Java arguments editing in the launcher settings                                                                                         |
 | `--margs <arguments>`           | Sets the Minecraft arguments. Blocks Minecraft arguments editing in the launcher settings                                                                               |
 | `--settings <path-to-file>`     | Sets the launcher configuration file path. The file will be created if it is missing                                                                                    |
-| `--username <username>`         | Sets default username. This account will be created if not exists (only for `--usertype plain`)                                                                         |
+| `--username <username>`         | Sets default username. This account will be created if it does not exist (only for `--usertype plain`)                                                                         |
 | `--usertype <account-type>`     | Specifies account type in case there are multiple account types with same name (`plain`,`minecraft` (Microsoft), `ely`)                                                 |
 | `--version <version-name>`      | Sets the default game version                                                                                                                                           |
 | `--window <width>;<height>`     | Sets the launcher window size                                                                                                                                           |
-| `--background <path-to-file>`   | Sets the background image path. Supports `http(s)`, `ftp`, `jar` (as zip archive) и `file` protocols. Blocks background setting in the launcher settings                |
+| `--background <path-to-file>`   | Sets the background image path. Supports `http(s)`, `ftp`, `jar` (as zip archive) and `file` protocols. Blocks background setting in the launcher settings                |
 | `--fullscreen <value>`          | `true` (to force launching the game in fullscreen mode) or `false` (will not force fullscreen, fullscreen may still be enabled in the game settings)                    |
 | `--launch`                      | Enables the "Delayed Launch" feature - the game will launch automatically a few seconds after opening the launcher window                                               |

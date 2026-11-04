@@ -44,7 +44,7 @@ To keep mods, worlds and settings for different versions of the game and mod loa
 ## Mods installation {#installation}
 1. Find and download desired mods
     :::tip[Mod download sources]
-    We recommend you to use official mods sources: [Modrinth](https://modrinth.com/mods) and [CurseForge](https://www.curseforge.com/minecraft/search?class=mc-mods)
+    We recommend using official mod sources: [Modrinth](https://modrinth.com/mods) and [CurseForge](https://www.curseforge.com/minecraft/search?class=mc-mods)
     :::
 2. Start Legacy Launcher and open game folder
     ![Opening the game folder](./img/mods_openclientdir.png)
@@ -64,25 +64,25 @@ To keep mods, worlds and settings for different versions of the game and mod loa
 Despite the relative ease of installing mods, users sometimes make mistakes that cause the game client to crash.
 
 ### Archive-in-archive {#archive}
-Most unofficial mods sources mods are packed into an archive to cut some storage costs. Minecraft will ignore such archives. The solution is simple: extract mod jar file from the archive.
+Many unofficial mod sites pack mods into an extra archive to save storage space. Minecraft will ignore such archives. The solution is simple: extract mod jar file from the archive.
 
 ### Extracted mod file {#extracted}
-This mistake is often caused by previous one: one extracted mod jar by mistake. Solution: pack extracted files to zip archive and rename `.zip` to `.jar`... Or re-download mod.
+This mistake often follows from the previous one: the mod jar was extracted by mistake. Solution: pack extracted files to zip archive and rename `.zip` to `.jar`... Or re-download mod.
 
 ### Missing dependencies {#dependencies}
-For a long time mod developers have been using other mods to create own. This results in a mods not working without the mod it was created with (i.e. without *dependency*).  
+For a long time mod developers have been using other mods to create their own. This results in mods not working without the mod it was created with (i.e. without *dependency*).  
 One who does not know this may simply forget to install the dependencies necessary for the mod to work. The result can be a broken game client or a warning message in the game after loading.
 ![Mod requires a missing dependency to be installed](./img/mods_coreismissed.png)
 It's easy enough to solve this problem: just download the missing mod version stated in the message (in the example it's `CodeChickenLib 2.6.0`).
 
 ### Wrong game version {#wrong-game-version}
-This error is caused by the fact that the one downloaded a mod not for selected game version. For example, he needed a mod for Minecraft 1.8, but he downloaded a mod for Minecraft 1.6.4. To solve this problem is quite simple: you need to find the same mod, but only for your version of the game.
+This error is caused by downloading a mod for a different game version. For example, the user needed a mod for Minecraft 1.8, but downloaded a mod for Minecraft 1.6.4. To solve this problem is quite simple: you need to find the same mod, but only for your version of the game.
 The other cause is switching version. One has mods for 1.7.10, but switched to 1.12.2 and forgot to remove old mods. Consider using [Subfolders](../launcher/subfolders) feature.
 :::note
-Sometimes mod authors end support for mods or do not release their mod for older versions of the game. Because of this, for example, a mod that was on Minecraft 1.7.10, will never appear for Minecraft 1.12.2. In this case, you can only look for an alternative or learn to develop your own mods.
+Sometimes mod authors end support for mods or do not release their mod for newer versions of the game. Because of this, for example, a mod that was on Minecraft 1.7.10, will never appear for Minecraft 1.12.2. In this case, you can only look for an alternative or learn to develop your own mods.
 :::
 
-### Wrond modloader version {#wrong-modloader-version}
+### Wrong modloader version {#wrong-modloader-version}
 Legacy Launcher provides **stable** modloader versions only. If a mod requires a different modloader version, you must install the required version of [Forge](./forge), [NeoForge](./neoforge), [Fabric](./fabric) or [Quilt](./quilt) yourself.
 
 ### Mod-specific troubleshooting {#specific}

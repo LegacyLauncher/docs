@@ -3,7 +3,7 @@
 
 :::info[In a nutshell]
 * We collect **only statistical information** that allows us to analyze trends in the player community
-* We do not collect data that could help identify users.
+* We do not share data that could help identify users.
 :::
 
 ## What information does Legacy Launcher collect? {#what}
@@ -11,7 +11,7 @@
 * **IP address** used by the computer when communicating with the server - to determine the user's country; according to German law it is stored without the last segment.
 * **Unique identifier (UUID)** - used to calculate the number of unique users; generated completely randomly on the user side when creating a configuration file.
 * **Current Legacy Launcher version** - we look at a graph of the most popular versions when we release updates
-** Legacy Launcher brand (for example: "legacy")** - to classify the user.
+* **Legacy Launcher brand (for example: "legacy")** - to classify the user.
 * **User OS name** - to determine the proportions of different OSs
 * **Selected language** (e.g.: "ru_RU") - to keep statistics on the popularity of languages
 
@@ -22,9 +22,9 @@
 * **Game server address**, if given (after clicking on the ad) - to calculate CTR
 * **Advertisement ID**, if provided - to evaluate the effectiveness of the ad
 
-### При просмотре/скрытии рекламного объявления {#per-ad}
+### When viewing/hiding an advertisement {#per-ad}
 * **Advertisement ID** – to calculate the reach/"annoyance" depending on the action
 * **Action** (view, hide, unhide) - to identify action
 
 ## What do we do with the information we get? {#why}
-We study user preferences. We share the most interesting findings on a public page. We do not share individual database records with third parties so that they can identify individual users based on their own data. We also do not link our data the sake of identifying individual users or all users in general.
+We study user preferences. We share the most interesting findings on a public page. We do not share individual database records with third parties so that they can identify individual users based on their own data. We also do not link our data with third-party data for the sake of identifying individual users or all users in general.

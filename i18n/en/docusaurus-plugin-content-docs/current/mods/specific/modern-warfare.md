@@ -15,9 +15,9 @@ Vic's Modern Warfare is not fully compatible with latest Forge versions
     :::warning
     Do not use any office suite!
     :::
-4. In this file in the string `allowEmissiveItems=true` replace `true` with `false`
+4. In this file in the string `B:allowEmissiveItems=true` replace `true` with `false`
 ```ini title="config/forge.cfg"
-allowEmissiveItems=false
+B:allowEmissiveItems=false
 ```
 5. Save the file and launch the game
 
@@ -27,4 +27,4 @@ allowEmissiveItems=false
 OptiFine somehow fixes this problem. You can install OptiFine using [this manual](../optifine#forge)
 
 ## Downgrading Forge {#downgrading-forge}
-You may try to install Forge version `14.23.4.2759` using [this manual](../forge) to workaround this issue
+If you don't have mods that require newer Forge versions, you may try to install Forge version `14.23.4.2759` using [this manual](../forge) to work around this issue

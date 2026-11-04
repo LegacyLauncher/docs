@@ -17,7 +17,7 @@ In the launcher settings you can customize the following elements of the launche
 * Main (login) form position
 * Font size
     :::warning
-    This feature is not recommended for use and will be removed in version 161.0. Consider using [HiDPI](./hidpi)
+    This feature is not recommended for use and was removed in version 161.0. Consider using [HiDPI](./hidpi)
     :::
 * Launcher window size
 * Launcher window background (`jpg`, `png` and `mp4` are supported)
@@ -25,22 +25,22 @@ In the launcher settings you can customize the following elements of the launche
     Legacy Launcher supports video-backgrounds in `mp4` format. This functionality requires a Java with JavaFX support. Animated images in `gif` and `animated png` formats are not supported
     :::
 
-## Via FlatLaF Themes {#flatlaf}
+## Via FlatLaf Themes {#flatlaf}
 :::info
-FlatLaF themes are supported in Legacy Launcher starting with version 143.0
+FlatLaf themes are supported in Legacy Launcher starting with version 143.0
 :::
 ### Embedded Themes {#flatlaf-embedded}
 In addition to the standard `light` and `dark` themes, `intellij` (light) and `darcula` (dark) themes are available.  
 A special `system` theme is also available to use the Java system theme.
 
-### External FlatLaF Themes {#flatlaf-external}
-You can create your own FlatLaF theme or use an existing one!  
+### External FlatLaf Themes {#flatlaf-external}
+You can create your own FlatLaf theme or use an existing one!  
 Just download the theme json file and specify the path to it in the launcher configuration file
 :::tip
-You can view the available themes and download json files in [FlatLaF Demo App](https://www.formdev.com/flatlaf/#demo).
+You can view the available themes and download json files in [FlatLaf Demo App](https://www.formdev.com/flatlaf/#demo).
 :::
 :::info
-Want to create a topic on your own? FlatLaF documentation is available for you:
+Want to create a theme on your own? FlatLaf documentation is available for you:
     * [Themes](https://www.formdev.com/flatlaf/themes/)
     * [Customizing](https://www.formdev.com/flatlaf/customizing/)
     * [Theme Properties](https://www.formdev.com/flatlaf/properties-files/)
@@ -50,7 +50,7 @@ Want to create a topic on your own? FlatLaF documentation is available for you:
 1. Close the Legacy Launcher
 2. Open Legacy Launcher configuration file using any text editor (e.g. [Notepad++](https://notepad-plus-plus.org/downloads/))
     :::tip
-    Launcher configuration file will most often be located either in the `.tlauncher/legacy.properties` folder, or in the `tl.properties` file in the installer path of the game (`.tlauncher/legacy/Minecraft/tl.properties`)
+    Launcher configuration file will most often be located either in the `.tlauncher/legacy.properties` file, or in the `tl.properties` file in the installer path of the game (`.tlauncher/legacy/Minecraft/tl.properties`)
     :::
 3. Find or create following lines:
     * `gui.laf.v1.flatlaf.light` - to replace light theme
@@ -86,7 +86,7 @@ Want to create a topic on your own? FlatLaF documentation is available for you:
 
 ## Via Legacy Themes {#legacy}
 :::warning
-This themes format is designed especially for Legacy Launcher, but allows only partial modification of the interface look and feel. We recommend to use **FlatLaF** themes
+This theme format is designed especially for Legacy Launcher, but allows only partial modification of the interface look and feel. We recommend using **FlatLaf** themes
 :::
 The color scheme is stored in a `.properties` file with UTF-8 encoding.
 
@@ -99,19 +99,19 @@ You can pass the theme file location either by specifying the path in the settin
 * `mixed` - field can take several types of values from those described above
 
 ### Theme File Syntax {#legacy-syntax}
-| Ключ                  | Тип                                  | Описание                                                                                                                  |
+| Key                   | Type                                 | Description                                                                                                               |
 |-----------------------|--------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| `foreground`          | `color`                              | Foreground color (text) color                                                                                             |
+| `foreground`          | `color`                              | Foreground (text) color                                                                                             |
 | `background`          | `color`                              | Background color (background in text fields)                                                                           |
 | `semiforeground`      | `color`                              | Color of the placeholder text (tooltips in text fields)                                                                  |
 | `panelbackground`     | `color`                              | Panels color (login form, settings, etc.)                                                                               |
 | `success`             | `color`                              | Permissive color (dark green by default)                                                                             |
 | `failure`             | `color`                              | Prohibition color (dark red by default)                                                                             |
 | `border`              | `color`                              | Default panel border color                                                                                          |
-| `border.size`         | `int`                                | Size of the outer borders панелей                                                                                             |
+| `border.size`         | `int`                                | Size of the outer panel borders                                                                                               |
 | `shadow`              | `mixed`: (`color`, `enum`: `border`) | Specifies the color of the inner shadow. If `border` is set, the initial color of the inner shadow defaults to the panel border color |
 | `icon.defaultColor`   | `color`                              | Default icon color                                                                                                  |
-| `icon.color.<icon-name>` | `color`                              | Icon `icon-name` (e.g. `icon.color.refresh`)                                                                         |
+| `icon.color.<icon-name>` | `color`                              | Color of the `icon-name` icon (e.g. `icon.color.refresh`)                                                                         |
 | `border.<panel>`     | `color`                              | Border color of the specified panel type                                                                                      |
 | `shadow.<panel>`     | `color`                              | Initial shadow color of the specified panel type                                                                               |
 | `arc.<panel>`        | `int`                                | Boundary curvature radius of the specified panel type |                                   

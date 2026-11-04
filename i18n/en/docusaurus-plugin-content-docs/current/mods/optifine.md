@@ -8,7 +8,7 @@ You don't have to install OptiFine manually. There are versions with pre-install
 :::danger[OptiFine Previews]
 There are preview versions of OptiFine available on the OptiFine download page. They are highly unstable and are not recommended for installation
 :::
-:::note[OptiFine downloading with less ADs(advertisements)]
+:::note[Downloading OptiFine with fewer ads]
 We recommend that you use the "Mirror" button instead of the "Download" so you don't see any extra ads
 :::
 
@@ -16,13 +16,18 @@ We recommend that you use the "Mirror" button instead of the "Download" so you d
 1. Make sure you have [Java installed](../faq/java)
 2. Download non-modified ("vanilla") Minecraft version using Legacy Launcher
 3. Download required OptiFine version from [the website](https://optifine.net/downloads)
-4. Launch OptiFine installer with double-clicking it
+4. Launch OptiFine installer by double-clicking it
 5. Install OptiFine. It will be installed as separate version
     1. Make sure the game folder path in the "Folder" field is the same as in the launcher settings
+        :::info[How to find the game folder?]
+        Start Legacy Launcher and click the button with the folder icon.  
+        *If you have the "Subfolders" feature enabled, select "Open Minecraft root folder"*.  
+        You can also find it in the launcher settings, in the "Game folder" field
+        :::
     2. Click "Install" button
 5. Restart the launcher
 6. Select newly installed OptiFine version
-    :::tip[How I can find it?]
+    :::tip[How can I find it?]
     Manually installed OptiFine version will be named like `XXX-OptiFine_YYY`, where `XXX` is the Minecraft version and `YYY` is the OptiFine version, e.g. `1.20.1-OptiFine_HD_U_I6`
     :::
 7. Launch the game
@@ -32,19 +37,24 @@ We recommend that you use the "Mirror" button instead of the "Download" so you d
 The official supported modloader is Forge.
 You can check if the required version of Forge is supported on the [OptiFine downloads page](https://optifine.net/downloads) in the second to last column.
 :::info[Forge support]
-Make sure supported Forge version is not empty nor "Forge N/A" - this states that selected OptiFine version **does not support** Forge installation
+Make sure the supported Forge version is neither empty nor "Forge N/A" - either means that the selected OptiFine version **does not support** Forge installation
 :::
 :::warning
-OptiFine is highly unstable, highly invasive modification. Consider using [alternatives](../faq/optifine-alternatives)
+OptiFine is a highly unstable, highly invasive modification. Consider using [alternatives](../faq/optifine-alternatives)
 :::
 
 1. Make sure you have [Java installed](../faq/java)
 2. Download non-modified ("vanilla") Minecraft version using Legacy Launcher
 3. [Install](./forge) required Forge version
 4. Download required OptiFine version from [the website](https://optifine.net/downloads)
-5. Launch OptiFine installer with double-clicking it
+5. Launch OptiFine installer by double-clicking it
 6. Install OptiFine to mods folder
     1. Make sure the game folder path in the "Folder" field is the same as in the launcher settings
+        :::info[How to find the game folder?]
+        Start Legacy Launcher and click the button with the folder icon.  
+        *If you have the "Subfolders" feature enabled, select "Open Minecraft root folder"*.  
+        You can also find it in the launcher settings, in the "Game folder" field
+        :::
     2. Click "Extract" button
     3. In the window select the mods folder
     4. Make sure OptiFine mod file appeared in the selected folder

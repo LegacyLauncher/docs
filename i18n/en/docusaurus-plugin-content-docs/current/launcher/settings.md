@@ -13,13 +13,13 @@ description: Detailed description of all launcher preferences
 ### "Minecraft" tab {#minecraft}
 ![Launcher preferences, Minecraft tab](./img/settings-minecraft.png)
 
-* **Directory**: game data folder path
+* **Game folder**: game data folder path
     * You can enable [**Subfolders feature**](./subfolders.md)
-* **Resolution**: game window size at startup
+* **Window size**: game window size at startup
     :::note
     This setting does not affect the fullscreen resolution
     :::
-* **Fullscreen**: force fullscreen mode for the game
+* **Force fullscreen**: force fullscreen mode for the game
     :::note
     Disabling this setting does not disable fullscreen in game settings
     :::
@@ -42,7 +42,7 @@ description: Detailed description of all launcher preferences
         You can [customize](../faq/custom-java.md) recommended Java versions
         :::
     * **Current only**: Launcher will use the same Java executable used for starting the launcher
-    * **Custom**: Select custom java by providing a path to `bin/java` or `javaw.exe` JRE executable
+    * **Custom**: Select custom Java by providing a path to `bin/java` or `javaw.exe` JRE executable
 * **Memory (RAM)**: select the amount of RAM allocated to Minecraft
     :::tip
     You can enter *any* value in the text box to the right of the slider
@@ -60,7 +60,7 @@ description: Detailed description of all launcher preferences
     * **Use discrete GPU**: launcher will force dedicated (high-performance) GPU to be used
 * **Ely.by skins**: use Ely.by skins in the game
     :::info
-    This option is respected only for "w/o password" accounts
+    This option is respected only for "w/o password" accounts.  
     This option was moved to "W/o password" account settings in "Manage accounts" menu in 161.0
     :::
 * **Suggest servers**: allows the launcher to add recommended servers to the in-game "Multiplayer" menu
@@ -91,7 +91,7 @@ description: Detailed description of all launcher preferences
     :::
 * **Background**: set custom background image. Supported image formats are `jpg` and `png`
     :::tip
-    If you're using a JRE with built-in JavaFX the launcher will allow you to set a mp4 video as background
+    If you're using a JRE with built-in JavaFX the launcher will allow you to set an mp4 video as background
     :::
 * **Logger**: enables debug logger (with launcher and game debug messages)
 * **Full command**: when disabled hides non-essential Minecraft launch arguments in logger messages
@@ -102,9 +102,12 @@ description: Detailed description of all launcher preferences
         :::danger
         We do not recommend using this option for the purpose of running multiple game clients from a single instance of the launcher
         :::
-* **Crash Manager**: enables **crash analyler** that will suggest possible solutions to the most common problems
+* **Crash Manager**: enables **crash analyzer** that will suggest possible solutions to the most common problems
 * **Alert on new**: launcher will display a message with a list of **releases**, **snapshots** and **modified versions** that have been released (or updated) since the launcher was closed.
 * **Notices**: show ads and announcements under the login form
+    :::tip
+    To hide the fullscreen (expanded) server list, close it with the "Preferences" button
+    :::
 * **Beta branch**: allows upgrading the launcher to the latest *beta version*
 * **Language**: selecting the interface language used in the launcher. Does not affect the game
 
@@ -128,7 +131,7 @@ description: Detailed description of all launcher preferences
         :::info
         If selected GC does not meet usage requirements, **default** settings will be used
         :::
-        * **Disable** - disables this feature. Not recommended unless you're using custom Minecraft arguments set.
+        * **Disable** - disables this feature. Not recommended unless you want to specify your own set of Java arguments.
         * **Default** - will use G1 GC when applicable and fall back to CMS. G1 will be used for powerful PCs for Java 8 and newer, and for all PCs for Java 11 and newer.
             :::note
             This option is identical to an old "Optimized arguments" checkbox.
@@ -140,7 +143,7 @@ description: Detailed description of all launcher preferences
             :::
         * **Force ZGC** - forces ZGC to be used when possible. **Requires** Java 15 or newer and Windows 10 build 17134 or macOS/Linux.
             :::info
-            ZGC claims to be a "revolutionary" garbage collector and does not allow stutters more that 1ms long. In theory it should be the best GC for running Minecraft
+            ZGC claims to be a "revolutionary" garbage collector and does not allow stutters longer than 1 ms. In theory it should be the best GC for running Minecraft
             :::
             :::warning
             ZGC may cause wrong used RAM calculations in Task Manager. Also, some stuttering may occur for the first minutes of playing
@@ -150,4 +153,4 @@ description: Detailed description of all launcher preferences
         JVM arguments usually start with **one** hyphen.  
         Minecraft arguments usually start with **two** hyphens.
         :::
-    * **Wrapper command**: command used to "wrap" Minecraft. Useful for tools like MangoHUD or Gamemode
+    * **Wrapper command**: command used to "wrap" Minecraft. Useful for tools like MangoHud or GameMode

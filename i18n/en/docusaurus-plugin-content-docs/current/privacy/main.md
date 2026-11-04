@@ -27,4 +27,4 @@ See [About Diagnostic Data](./diagnostic) for more information.
 We may use the Yandex.Metrica service to collect statistics on our websites. The Privacy Policy of the service can be found at: https://yandex.ru/legal/confidential/.
 
 ## Policy Updates {#policy-updates}
-We may change the quantity and content of the information we collect without any notice, but the most important rule is that we will never share personal information with third parties will be never changed.
+We may change the amount and nature of the information we collect without notice, but our most important rule - never to share personal information with third parties - will never change.

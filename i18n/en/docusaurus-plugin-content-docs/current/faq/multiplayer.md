@@ -19,7 +19,7 @@ If you were given the address of a public server or you found one in the Interne
 ### WorldHost {#mods-worldhost}
 Download: [Modrinth](https://modrinth.com/mod/world-host)
 
-This mod is considered the most universal. To connect to each other use its "friends system" or `/worldhost tempip` (gives temporary address for 60 seconds, requires router to support `uPnP` function) and `/worldhost ip` (permanent address) commands.
+This mod is considered the most universal. To connect to each other use its "friends system" or `/worldhost tempip` (gives temporary address for 60 seconds, requires router to support `UPnP` function) and `/worldhost ip` (permanent address) commands.
 
 ### e4mc {#mods-e4mc}
 Download: [Modrinth](https://modrinth.com/mod/e4mc)
@@ -29,7 +29,7 @@ Install the mod and use the "Open to LAN" button in the game pause menu. An addr
 ### NgrokLAN {#mods-ngrok}
 Download: [Modrinth](https://modrinth.com/mod/ngrok-lan)
 
-This mod is similar to e4mc, but uses the [Ngrok](https://ngrok.com/) service to publish your server. The mod requires setup and will not work "out of the box". Instructions on how to setup the mod can be found on [its page](https://modrinth.com/mod/ngrok-lan).
+This mod is similar to e4mc, but uses the [Ngrok](https://ngrok.com/) service to publish your server. The mod requires setup and will not work "out of the box". Instructions on how to set up the mod can be found on [its page](https://modrinth.com/mod/ngrok-lan).
 
 ### LAN Extender {#mods-lan-extender}
 Download: [Modrinth](https://modrinth.com/mod/lan-extender)
@@ -39,7 +39,7 @@ NgrokLAN alternative, also uses [Ngrok](https://ngrok.com/) service, but easier 
 ### LAN World Plug-n-Play {#mods-lan-plug-n-play}
 Download: [Modrinth](https://modrinth.com/mod/mcwifipnp)
 
-Allows fine-tuning of the opened world (e.g. you can disable PvP or disable Minecraft Premium requirement) directly from the game menu. Requires the router to support the `uPnP' feature.
+Allows fine-tuning of the opened world (e.g. you can disable PvP or disable Minecraft Premium requirement) directly from the game menu. Requires the router to support the `UPnP` feature.
 
 ## LAN {#lan}
 This is the simplest, and at the same time the most complicated method. The simplicity of it is that you don't need to do anything - you just need to be on the same *local network* - that is, roughly speaking, connected to the same router or Wi-Fi network. Just open the world to the LAN with the button of the same name in the game menu - and your world will be visible on all computers in your house.
@@ -57,16 +57,16 @@ If you have a "public" ("external") IP address, you can try to open the world to
 This guide does not cover this method, as the necessary steps depend greatly on the model of router you are using. As a rule, you need to find the NAT or "port forwarding" settings, enter the IP address or MAC address of your computer and enter the required port numbers.
 
 ### Port tunneling {#port-tunneling}
-There are some services that allows you to publish your port on one of their public IPs. You can use it to host your Minecraft world/server. Known services are [PlayIt](https://playit.gg) and [Ngrok](https://ngrok.com/)
+There are some services that allow you to publish your port on one of their public IPs. You can use them to host your Minecraft world/server. Known services are [PlayIt](https://playit.gg) and [Ngrok](https://ngrok.com/)
 
 ## Free hosting {#free-hosting}
-You can try to create a public server for yourself and your friends on free hostings. Typically, free hostings are very limited in resources, so the game on such servers will be associated with discomfort and lags. Also, in most cases, you will not be able to install an interesting modpack because of the limited resources of the server. In addition, some free hosting limit the uptime, and your server will be forcibly stopped after some time after launching.  
+You can try to create a public server for yourself and your friends on free hosting services. Typically, free hosting services are very limited in resources, so the game on such servers will be associated with discomfort and lags. Also, in most cases, you will not be able to install an interesting modpack because of the limited resources of the server. In addition, some free hosts limit the uptime, and your server will be forcibly stopped after some time after launching.  
 The list of free hosting sites we know of: [FalixNodes](https://falixnodes.net/), [Aternos](https://aternos.org/), [server.pro](https://server.pro/), [Minehut](https://minehut.com/).  
 Instructions on how to set up the server can usually be found on the hosting site itself.
 
 ## Paid hosting {#paid-hosting}
-If you and your friends don't mind spending some money on hosting, you can find a paid game hosting service to suit your needs and run a server on it. As a rule, you will have full access to the server files, and can install any set of mods (provided that you have enough money to pay for a server of suitable capacity). From the pros of this method - non-stop server operation and independence from the players' power.  
-You can find situable paid Minecraft hosting on the web. As a rule, hosting already has instructions on how to set up the server and they are unnecessary in this guide.
+If you and your friends don't mind spending some money on hosting, you can find a paid game hosting service to suit your needs and run a server on it. As a rule, you will have full access to the server files, and can install any set of mods (provided that you have enough money to pay for a server of suitable capacity). The advantages of this method are 24/7 uptime and independence from the players' hardware.  
+You can find suitable paid Minecraft hosting on the web. As a rule, hosting already has instructions on how to set up the server and they are unnecessary in this guide.
 
 ## Dedicated server {#dedicated-server}
 This is the most complicated option for real pros!  
@@ -76,7 +76,7 @@ Most [modloaders](/tags/modloader) support installation as a game server.
 
 ## Common issues {#troubleshooting}
 ### Multiplayer button is not active! {#multiplayer-disabled}
-This problem is specific to Minecraft 1.16.5 when using offline (w/o password) account. Use Ely.by or Microsoft account. You can also try [this mod](https://modrinth.com/mod/enablemultiplayermode).
+This problem is specific to Minecraft 1.16.4-1.16.5 when using offline (w/o password) account. Use Ely.by or Microsoft account. You can also try [this mod](https://modrinth.com/mod/enablemultiplayermode).
 
 ### Invalid session (try restarting your game) {#invalid-session}
 The server you are connecting to allows only Minecraft Premium players.
@@ -90,7 +90,7 @@ Perhaps you should think about using [Ely.by authorization for servers](https://
 * If it's a public server - most likely you can only log in to it from a **Minecraft Premium account**
 * If you are connecting to a friend's world - you both need to use either **Minecraft Premium** accounts or **Ely.by** accounts. You can also try installing a mod that allows you to customize the world opening settings for the network.
 
-### Connection refused: no further information {#connection-refused}
+### Connection refused: no further information, Connection timeout {#connection-refused}
 If this problem occurs on all servers, it means that something on your PC (antivirus or firewall) is blocking the game from connecting to the servers. Try temporarily disabling antivirus and firewall or add Java to their exceptions.
 In addition, this problem can be caused by some VPNs/proxy (for example, SafeIP) and GoodbyeDPI.  
 If the problem appears only with a particular server, it is probably a problem on its side - contact the server administration for further help.
@@ -113,13 +113,13 @@ It is not uncommon for several different users from the same apartment building,
 
 ### The server asks me for my password, but I don't know any! {#server-password}
 Most cracked servers use plugins to protect user accounts.  
-If you **first** logged into the server and it asks you to *enter password* - most likely someone has already registered on this server under your nickname. Change your nickname or contact the server administration.
+If you are logging into the server **for the first time** and it asks you to *enter password* - most likely someone has already registered on this server under your nickname. Change your nickname or contact the server administration.
 
 ### I've been banned on the server! {#server-banned}
 Contact the server administration. We provide the game itself and are in no way connected with any game servers.
 
 ### I bought something on a server website for real money and got nothing! {#server-shop}
-Contact the server administration. We provide the game itself and are in no way connected with any game servers. You can also ask your bank for chargeback.
+Contact the server administration. We provide the game itself and are in no way connected with any game servers. You can also ask your bank for a chargeback.
 
 ### I logged on to the server and it's all gone! {#server-wipe}
 Check that you are logging into the server from the correct account.  

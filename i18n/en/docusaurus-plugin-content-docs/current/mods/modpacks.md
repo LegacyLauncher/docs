@@ -4,14 +4,14 @@ sidebar_position: 1
 ---
 # Modpacks Installation
 :::info
-This page requires localization of screenshots. Feel free to [open PR](https://github.com/LegacyLauncher/docs) if you want to help
+This page requires localization of screenshots. Feel free to [open a PR](https://github.com/LegacyLauncher/docs) if you want to help
 :::
-Installation modpack in general does not differ from [mods installation](./installation). It all depends on the source of the modpack.
+Installing a modpack generally does not differ from [mods installation](./installation). It all depends on the source of the modpack.
 
-## Curseforge
+## CurseForge
 1. Download and install [CurseForge app](https://www.curseforge.com/download/app)
     :::tip
-    We recommend you to use "Standalone" app, not "Overwolf" one
+    We recommend using the "Standalone" app, not "Overwolf" one
     :::
 2. Select "Minecraft" game
     ![CurseForge game selector](./img/modpack-cf-select-game.png)
@@ -47,16 +47,17 @@ Installation modpack in general does not differ from [mods installation](./insta
     ![Select .mrpack](./img/modpack-select-mrpack.png)
 6. Press "Download" button and wait until all modpack files are downloaded
     ![Download modpack files](./img/modpack-zip-download.png)
-7. You'll be promted to save modpack zip file
+7. You'll be prompted to save modpack zip file
 8. Install required [modloader](/tags/modloader)
 9. Start Legacy Launcher and open game folder
     ![Opening the game folder](./img/mods_openclientdir.png)
-10. Move modpack files to game folder
+10. Open modpack archive
+11. Move modpack files to game folder
     ![Modpack files moving](./img/modpack-move-files.png)
-11. Done! You're ready to launch the game
+12. Done! You're ready to launch the game
 
 ## Other websites {#other}
-Most other websites (and other users) will use an zip, 7z or rar archive for modpacks.
+Most other websites (and other users) will use a zip, 7z or rar archive for modpacks.
 1. Install required [modloader](/tags/modloader)
 2. Start Legacy Launcher and open game folder
     ![Opening the game folder](./img/mods_openclientdir.png)

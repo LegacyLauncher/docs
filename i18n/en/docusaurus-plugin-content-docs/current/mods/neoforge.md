@@ -1,5 +1,5 @@
 ---
-description: NeoForge instalation manual
+description: NeoForge installation manual
 tags:
   - modloader
 ---
@@ -16,10 +16,15 @@ Legacy Launcher 161.0 or newer is required to use NeoForge
 4. Install NeoForge. It will be installed as separate version
     1. Select "Install client"
     2. In the field below, select the path to the game folder. Make sure it is the same as in the launcher settings
+        :::info[How to find the game folder?]
+        Start Legacy Launcher and click the button with the folder icon.  
+        *If you have the "Subfolders" feature enabled, select "Open Minecraft root folder"*.  
+        You can also find it in the launcher settings, in the "Game folder" field
+        :::
     3. Press "Proceed" button and wait until installation ends
 5. Start (or restart) the launcher
 6. Select newly installed NeoForge version
-    :::tip[How I can find it?]
-    Manually installed NeoForge version will be named like `neoforge-XXX`, where `XXX` is the Forge version, e.g. `neoforge-20.4.162-beta`
+    :::tip[How can I find it?]
+    Manually installed NeoForge version will be named like `neoforge-XXX`, where `XXX` is the NeoForge version, e.g. `neoforge-20.4.162-beta`
     :::
 7. Launch the game

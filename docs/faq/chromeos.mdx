@@ -2,23 +2,23 @@ import RedirHost from "@site/src/components/RedirHost";
 import CodeBlockContainer from "@theme/CodeBlock/Container";
 
 
-# Установка на Chrome OS
+# Установка на ChromeOS
 
 :::tip[Заметка]
-Mojang выпустили [версию Minecraft для Chrome OS](https://play.google.com/store/apps/details?id=com.mojang.minecraftpe), которая продаётся отдельно.
+Mojang выпустили [версию Minecraft для ChromeOS](https://play.google.com/store/apps/details?id=com.mojang.minecraftpe), которая продаётся отдельно.
 Скорее всего, на вашем устройстве она запустится и будет работать лучше, чем Java Edition.
 :::
 
 :::warning[Обратите внимание!]
 Перед началом удостоверьтесь, что на вашем устройстве [можно запускать
 приложения Linux](https://www.chromium.org/chromium-os/chrome-os-systems-supporting-linux/).
-Обычно это компьютеры, работающие на Chrome OS Flex, или устройства Chromebook, которые вышли в 2019 году или позднее.
+Обычно это компьютеры, работающие на ChromeOS Flex, или устройства Chromebook, которые вышли в 2019 году или позднее.
 Если Chromebook принадлежит организации (школе или университету), то его администратор мог отключить этот функционал.
 :::
 
-В этой статье мы постараемся показать, как можно запустить Legacy Launcher для Minecraft: Java Edition на поддерживаемых устройствах Chrome OS.
+В этой статье мы постараемся показать, как можно запустить Legacy Launcher для Minecraft: Java Edition на поддерживаемых устройствах ChromeOS.
 
-1. [Настройте окружение Linux](https://support.google.com/chromebook/answer/9145439) на вашем устройстве, используя официальную инструкцию. ![Меню разработчика в Chrome OS](/img/chromeos_1.png) ![Установка Linux в Chrome OS](/img/chromeos_2.png)
+1. [Настройте окружение Linux](https://support.google.com/chromebook/answer/9145439) на вашем устройстве, используя официальную инструкцию. ![Меню разработчика в ChromeOS](/img/chromeos_1.png) ![Установка Linux в ChromeOS](/img/chromeos_2.png)
 2. Перед вами откроется окно Терминала ![Окно Терминала](/img/chromeos_3.png)
 3. Введите следующие команды, чтобы установить Java и «разбудить» X11:
    ```shell
@@ -44,11 +44,11 @@ Mojang выпустили [версию Minecraft для Chrome OS](https://play
    ![Окно лаунчера](/img/chromeos_7.png)
 
 :::warning[Обратите внимание!]
-Ваш опыт может варьироваться от «ужасного» до «приемлемого», так как устройства на Chrome OS обычно обладают достаточно слабыми характеристиками.
+Ваш опыт может варьироваться от «ужасного» до «приемлемого», так как устройства на ChromeOS обычно обладают достаточно слабыми характеристиками.
 <RedirHost path="/discord/ru">В любом случае, напишите нам</RedirHost>, если у вас что-то получится.
 :::
 
-Если всё работает, то после закрытия игры запустить лаунчер заново можно введя в Терминале следующую команду:
+Если всё работает, то после закрытия игры запустить лаунчер заново можно, введя в Терминале следующую команду:
 ```shell
 java -jar LL.jar
 ```

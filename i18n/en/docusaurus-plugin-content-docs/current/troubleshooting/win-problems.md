@@ -31,7 +31,7 @@ We've prepared a ready-to-use package for replacing Java. Follow [this guide](..
 The launcher adds a set of Java settings designed for smoother and more stable gameplay, but in some cases, the effect can be the opposite.
 1. Open the launcher settings, go to the "Minecraft" tab, and navigate to Java settings.
     ![Settings => Minecraft => Java/JRE => Configure...](./img/configure-button-en.png)
-2. In the opened window, uncheck the "Add optimized arguments" box.
+2. In the opened window, select "Disable" in the "Improved JVM arguments" list (in older launcher versions, uncheck the "Also use optimized arguments" box).
     ![Also use optimized arguments](./img/optimized-arguments-off-en.png)
     :::note
     In newer launcher versions, you can try a different set of optimized arguments instead of completely disabling them.

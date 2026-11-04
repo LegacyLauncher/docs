@@ -27,7 +27,7 @@ sidebar_position: 3
 ```
 Эта же ошибка характерна для запуска самой игры с несовместимой (слишком старой) версией Java. Эта ошибка также определяется по ключевому слову `UnsupportedClassVersionError`
 
-Старые версии игры используют т.н. `launchwrapper`, который не работает с Java 9 или новее. Подобные версии будут вылетать со следующим логом при запуске на слишком новых версиях игры:
+Старые версии игры используют т.н. `launchwrapper`, который не работает с Java 9 или новее. Подобные версии будут вылетать со следующим логом при запуске на слишком новых версиях Java:
 ```log title="Пример лога"
 // highlight-next-line
 > Exception in thread "main" java.lang.ClassCastException: class jdk.internal.loader.ClassLoaders$AppClassLoader cannot be cast to class java.net.URLClassLoader (jdk.internal.loader.ClassLoaders$AppClassLoader and java.net.URLClassLoader are in module java.base of loader 'bootstrap')
@@ -66,7 +66,7 @@ sidebar_position: 3
 Ни в коем случае не пытайтесь вручную удалить или заменить проблемный dll-файл! Вы можете усугубить проблему или сломать вашу ОС!
 :::
 :::tip
-Вы можете _попробовать_ решить данную проблему с помощью [этой инструкции](./self-repair)
+Вы можете _попробовать_ решить данную проблему с помощью [этой инструкции](./win-problems#replace-java)
 :::
 
 ## Проблема GLFW с устройствами ввода {#input-device-crash}
@@ -193,7 +193,7 @@ OptiFine максимально жестко привязан к версии и
 > Exception in thread "main" java.lang.IllegalArgumentException: multi-piston: Invalid module name: 'multi-piston' is not a Java identifier
 >   at java.base/jdk.internal.module.Checks.requireModuleName(Checks.java:59)
 ```
-`IllegalArgumentException` с комментарием `Invalid module name` говорит нам о недопустимом названии модуля для мода. Обычно это сигнализирует об одной из двух вещах: мод сломан или загружается мод для неправильной версии игры. Также есть шанс, что проблема в имени файла мода - в данном примере можно попробовать переименовать мод (для данного примера - переименовать мод `multi-piston` в `multipiston`)
+`IllegalArgumentException` с комментарием `Invalid module name` говорит нам о недопустимом названии модуля для мода. Обычно это сигнализирует об одной из двух вещей: мод сломан или загружается мод для неправильной версии игры. Также есть шанс, что проблема в имени файла мода - в данном примере можно попробовать переименовать мод (для данного примера - переименовать мод `multi-piston` в `multipiston`)
 :::warning
 Не переименовывайте моды кириллицей! Некоторые версии Forge будут назначать таким модам пустые имена модулей и ломаться!
 :::
@@ -240,7 +240,7 @@ OptiFine максимально жестко привязан к версии и
 [:]     at com.github.mim1q.minecells.entity.ProtectorEntity.<init>(ProtectorEntity.java:31)
 [:]     at net.minecraft.class_1299.method_5883(class_1299.java:544)
 ```
-На этот раз ошибка произошла уже во время игры, и Fabric снова не может определить проблемный мод. Но нам повезло - если почитать строчки `at`, мы видим, что сбой произошел при работе мода `minecells` и его удаление, скорее всего, поможет его решить.
+На этот раз ошибка произошла уже во время игры, и Fabric снова не может определить проблемный мод. Но нам повезло - если почитать строчки `at`, мы видим, что сбой произошел при работе мода `minecells` и его удаление, скорее всего, решит проблему.
 
 ## Fabric - зависимости мода {#fabric-mod-dep}
 ```log title="Пример лога"

@@ -12,9 +12,9 @@ Vic's Modern Warfare частично несовместим с последне
 1. Откройте папку игры. Это можно сделать кнопкой в лаунчере.
 2. Перейдите в папку `config`
 3. Найдите файл `forge.cfg` и откройте его любым текстовым редактором (например, [Notepad++](https://notepad-plus-plus.org/downloads/))
-4. В открывшемся файле найдите строку `allowEmissiveItems=true` и замените значение `true` на `false`
+4. В открывшемся файле найдите строку `B:allowEmissiveItems=true` и замените значение `true` на `false`
 ```ini title="config/forge.cfg"
-allowEmissiveItems=false
+B:allowEmissiveItems=false
 ```
 5. Сохраните файл и запустите игру
 

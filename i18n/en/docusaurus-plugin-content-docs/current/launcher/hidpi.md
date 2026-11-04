@@ -1,5 +1,5 @@
 ---
-description: Поддержка HiDPI в Legacy Launcher
+description: HiDPI support in Legacy Launcher
 ---
 # HiDPI
 :::info

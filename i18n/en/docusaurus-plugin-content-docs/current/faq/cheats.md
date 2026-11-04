@@ -3,10 +3,10 @@ description: About technical support for users with cheats
 ---
 # Cheats
 :::info[Legacy Launcher developers do not encourage cheats]
-And any "pvp software" (and other cheats euphemisms) or visuals, as their problems are kind of simular
+And any "pvp software" (and other cheat euphemisms) or visuals, as their problems are kind of similar
 :::
 :::danger[Caution! A virus has been detected!]
-Unofficial versions and mods from untrusted sources are the most popular way to infect your PC. **Do not download** any mods or versions from YouTube, socials, TikToks nor unofficial websites.
+Unofficial versions and mods are often used to spread malware. **Do not run** mods or versions downloaded from links on YouTube, from social networks, received from strangers or from unofficial websites.
 :::
 
 ## Is your launcher for cheaters? {#cheat-launcher}
@@ -27,8 +27,8 @@ All your problems will be gone if cheat "author" added one little fix. The fact 
 :::
 
 ## Cheat crashes while playing! {#crash}
-If you have ignored the above point and still run an obviously inoperable version with `-noverify` - it is to be expected. Even the "developer" will not be able to help you, because he obviously doesn't understand anything about Java programming.
-In any case - **contact the cheat developer, only he will be able to understand the reason of a crash**. We can only suggest you removing cheats and playing with unmodified version of the game.
+If you have ignored the above point and still run an obviously inoperable version with `-noverify` - it is to be expected. Even the "developer" will not be able to help you, because he obviously doesn't understand anything about Java programming (and most likely is not even the author of the build he distributes).
+In any case - **contact the cheat developer, only he will be able to understand the reason for the crash**. We can only suggest removing cheats and playing an unmodified version of the game.
 :::warning[Please note!]
 Neither Minecraft, Legacy Launcher, nor Java **has any anti-cheats**. The `-noverify` option is not responsible for disabling them, but for disabling checks of executable code for **correctness and operability**.
 :::
@@ -40,7 +40,7 @@ If a cheat developer really thinks so, we are waiting for him to contact us with
 Because we have no data to identify the cause of the crash. All we can see from our side is "well, it doesn't work". **Only the cheat developer has the information to diagnose crashes.**
 
 ## But I have no cheats! {#i-am-trying-to-fool-you}
-When diagnosing an error, we do not look at version name or mod names. If we find files and techniques characteristic for cheats (use of non-standard libraries, tweakers and agents; code obfuscation; modification name hiding or falsification; specific code changes) - then we consider such modifications as cheats and do not provide any technical support for the reasons described above. *The majority of cheats, "pvp software" and "visuals" fall under such conditions*. **For any crashes of such modifications, you should contact their authors only and only.**
+When diagnosing an error, we do not look at version name or mod names. If we find files and techniques characteristic of cheats (use of non-standard libraries, tweakers and agents; code obfuscation; modification name hiding or falsification; specific code changes) - then we consider such modifications as cheats and do not provide any technical support for the reasons described above. *The majority of cheats, "pvp software" and "visuals" fall under such conditions*. **For any crashes of such modifications, you should contact their authors only.**
 
 ## But I cannot contact the author! {#no-author-reply}
 Sorry, but that's not an issue with our launcher.

@@ -8,7 +8,7 @@ description: Не запускается сборка Arcania 1.3
 ## Обновление модов {#update-mods}
 :::tip[Рекомендованный способ]
 :::
-Вам необходимо обновить мод "Bosses Of Mass Destruction" ("BOMD").
+Вам необходимо обновить мод "Bosses of Mass Destruction" ("BOMD").
 1. Скачайте последнюю версию мода для 1.20.1 с [Modrinth](https://modrinth.com/mod/bosses-of-mass-destruction/versions?g=1.20.1)
 2. Удалите файл `BOMD-1.7.x-1.20.1.jar` из папки модов
 3. Поместите скачанный вами файл в папку модов

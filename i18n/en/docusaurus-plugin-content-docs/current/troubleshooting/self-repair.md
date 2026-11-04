@@ -67,7 +67,7 @@ Unfortunately, these errors are often non-trivial to fix, and even we might not 
 Never attempt to manually delete or replace the problematic dll file! You could make the problem worse or break your OS!
 :::
 :::tip
-You can _try_ to resolve this issue using [this guide](./self-repair)
+You can _try_ to resolve this issue using [this guide](./win-problems#replace-java)
 :::
 
 ## GLFW Input Devices Issue {#input-device-crash}
@@ -80,7 +80,7 @@ Some input devices, such as gamepads, joysticks and steering wheels may cause cr
 >       [14:49:52] [main/INFO] [STDERR/]: [org.lwjgl.glfw.GLFWErrorCallback$1:invoke:110]: net.minecraftforge.fml.loading.progress.ClientVisualization.initWindow(ClientVisualization.java:58)
 >       [14:49:52] [main/INFO] [STDERR/]: [org.lwjgl.glfw.GLFWErrorCallback$1:invoke:110]: net.minecraftforge.fml.loading.progress.ClientVisualization.start(ClientVisualization.java:335)
 ```
-"Invalid axis in gamepad mapping" may indicate there is a gamepad issue, disconnecting gamepads (joysticks, steerings wheels) will fix the issue.
+"Invalid axis in gamepad mapping" may indicate a gamepad issue. Disconnecting gamepads (joysticks, steering wheels) will fix it.
 
 ## OptiFine - incompatible Forge version {#optifine-incompatible-forge}
 OptiFine is a rather finicky mod that requires specific Forge versions.
@@ -106,7 +106,7 @@ If OptiFine detects an incompatible game version, the following lines will appea
 > [21:18:40] [main/INFO] [STDERR]: [optifine.OptiFineClassTransformer:getOptiFineResourcePatched:223]:  at optifine.xdelta.GDiffPatcher.<init>(GDiffPatcher.java:67)
 > [21:18:40] [main/INFO] [STDERR]: [optifine.OptiFineClassTransformer:getOptiFineResourcePatched:223]:  at optifine.xdelta.GDiffPatcher.<init>(GDiffPatcher.java:63)
 ```
-The key line here is optifine.xdelta.PatchException. If you see this in the log, check the OptiFine version.
+The key line here is `optifine.xdelta.PatchException`. If you see this in the log, check the OptiFine version.
 
 ## Forge - mod error {#forge-mod-error}
 There should be a crash at the end of the log. It looks like a series of lines starting with `at`:
@@ -147,7 +147,7 @@ Sometimes the problematic mod will appear not in the `Caused by` line itself, bu
 [:]         at net.minecraftforge.registries.DeferredRegister$EventDispatcher.lambda$handleEvent$0(DeferredRegister.java:366) ~[forge-1.20.2-48.1.0-universal.jar%23185!/:?] {re:classloading,pl:eventbus:A}
 
 ```
-In this example, the error occurs in the `ageofweapons` mod, which probably doesn't support used Forge version - it can't find (`ClassNotFoundException`) the Minecraft Forge component (`net.minecraftforge.network.PlayMessages$SpawnEntity`)
+In this example, the error occurs in the `ageofweapons` mod, which probably doesn't support the Forge version in use - it can't find (`ClassNotFoundException`) the Minecraft Forge component (`net.minecraftforge.network.PlayMessages$SpawnEntity`)
 
 Older versions of Forge generated a table with a mods list:
 ```log title="Log example"
@@ -181,7 +181,7 @@ The `NoClassDefFoundError` error usually signals a missing mod. From this line w
 This line shows that the `valhelsia_structures` mod needs `valhelsia_core` mod version `1.1.1` or newer, which is not installed now (`MISSING`). After installing all required mods of **required versions** the game will start.
 
 ## Forge - invalid mod name {#forge-invalid-name}
-After switching the game to Java 17 Forge may crash due to incorrect names of mods. It is not recommended to rename mods with names containing non-Latin characters.
+After switching the game to Java 17 Forge may crash due to incorrect names of mods. Do not give mods names containing non-Latin characters.
 ```log title="Log example"
 // highlight-next-line
 > Exception in thread "main" java.lang.IllegalArgumentException: 1.0-1.18+: Empty pre-release
@@ -195,9 +195,9 @@ In newer versions of the game, there is another case:
 > Exception in thread "main" java.lang.IllegalArgumentException: multi-piston: Invalid module name: 'multi-piston' is not a Java identifier
 >   at java.base/jdk.internal.module.Checks.requireModuleName(Checks.java:59)
 ```
-The `IllegalArgumentException` with the comment `Invalid module name` indicates an invalid module name for the mod. This usually points to one of two things: either the mod is broken, or the mod is being loaded with the wrong version of the game. There's also a chance the issue lies in the mod's filename – in this case, you could try renaming the mod (for this example - from `multi-piston` to `multipiston`)
+The `IllegalArgumentException` with the comment `Invalid module name` indicates an invalid module name for the mod. This usually points to one of two things: either the mod is broken, or the mod is being loaded with the wrong version of the game. There's also a chance the issue lies in the mod's filename - in this case, you could try renaming the mod (for this example - from `multi-piston` to `multipiston`)
 :::warning
-Do not rename mods using non-latin characters! Some Forge versions will assign empty module names to such mods, causing them to break!
+Do not rename mods using non-Latin characters! Some Forge versions will assign empty module names to such mods, causing them to break!
 :::
 
 ## Forge - duplicated mods {#forge-duplicates}
@@ -256,7 +256,7 @@ This time the error occurred during the game, and Fabric is again unable to dete
 >   at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:51) ~[fabric-loader-0.15.7.jar:?]
 ```
 You must install mods that meet the requirements of the installed mods.  
-For example, in this case a mod requires a version of Fabric Loader `0.14.25 or newer`, but is `older than 0.15`, making it unsuitable for the version `0.15.7` you are using. Updating the mod or installing the required version of `fabric-loader` will fix this problem.
+For example, in this case a mod requires a version of Fabric Loader `0.14.25 or newer`, but `older than 0.15`, making it unsuitable for the version `0.15.7` you are using. Updating the mod or installing the required version of `fabric-loader` will fix this problem.
 
 ## Mod corruption {#corruption-mod}
 ```log title="Log example"
@@ -266,8 +266,8 @@ Caused by: java.util.zip.ZipException: zip END header not found
     at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1315)
 
 ```
-The `java.util.zip.zip.ZipException: zip END header not found` error in the log signals that the game files and/or mods are corrupted. Use the "update client" checkbox, re-download mods from CurseForge/Modrinth.
-:::tip[Особенности Fabric]
+The `java.util.zip.ZipException: zip END header not found` error in the log signals that the game files and/or mods are corrupted. Use the "update client" checkbox, re-download mods from CurseForge/Modrinth.
+:::tip[Fabric specifics]
 Fabric stores some data in the `.fabric` folder in the game folder. If a similar error occurs with Fabric, it is recommended to delete this folder
 :::
 :::danger

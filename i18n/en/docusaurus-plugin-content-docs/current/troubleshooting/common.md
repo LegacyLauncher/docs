@@ -24,7 +24,7 @@ The game folder must contain at least the `assets`, `libraries`, and `versions` 
 Don’t forget to restore your other [launcher settings](../launcher/settings.md), as the configuration file has been reset to default.
 :::
 :::warning
-We recommend checking your hard drive for errors and trying the "refresh client" option — launcher configuration file corruption is often caused by OS malfunctions or disk issues.
+We recommend checking your hard drive for errors and trying the "Force update" option — launcher configuration file corruption is often caused by OS malfunctions or disk issues.
 :::
 
 ### Launcher Takes a Long Time to Start! {#slow-launch}
@@ -36,8 +36,7 @@ Please save the diagnostic report — [this guide](../support/launcher) might he
 Additionally, completely disconnecting from the internet (unplugging the cable or disabling Wi-Fi) might help.
 
 ### I Can't Install New versions! {#no-versions}
-Check launcher preferences and make sure the "Remote from server" checkbox is **enabled** and "Installed only" is **disabled**
-Убедитесь, что в настройках лаунчера **включена** галочка "Загружать с сервера" и отключена галочка "Только установленные"
+Check launcher preferences and make sure the "Remote from server" checkbox is **enabled** and "Only installed" is **disabled**
 
 ## Issues with entering the world or servers {#no-crashes}
 The game doesn't crash but shows an error when trying to enter a server or single-player world?
@@ -71,10 +70,10 @@ Game crashing? "Something went wrong"? Here's your guide!
 
 ### Check selected locale {#wrong-locale}
 Many Minecraft versions and mods will crash when Regional Settings are using "uncommon" numerals like Mashriki (`٠, ١, ٢, ٣, ٤, ٥, ٦, ٧, ٨, ٩`). One should change Regional settings to use "common" Arabic symbols.  
-**For Windows users**: Open **Region Settings** in the **Settings** app and go to "Regional Format" (for older Windows versions: Open **Region** settings in **Control Panel**), then change it to an appropriate option. Make sure newly selected option uses the "standart" Arabic numerals (`0, 1, 2, 3, 4, 5, 6, 7, 8, 9`). A reboot may be required.  
+**For Windows users**: Open **Region Settings** in the **Settings** app and go to "Regional Format" (for older Windows versions: Open **Region** settings in **Control Panel**), then change it to an appropriate option. Make sure newly selected option uses the "standard" Arabic numerals (`0, 1, 2, 3, 4, 5, 6, 7, 8, 9`). A reboot may be required.  
 
 ### Check connected input devices {#input-devices}
-Some input devices, such as steering wheels, gamepads, joystics may cause Minecraft crashes due to GLFW issues
+Some input devices, such as steering wheels, gamepads, joysticks may cause Minecraft crashes due to GLFW issues
 
 ### Game broke after installing a specific mod {#known-mod}
 You already know which mod is causing the error, so please contact the mod's author.
@@ -95,7 +94,7 @@ Using [version-specific subfolders](../launcher/subfolders.md) helps avoid such 
 :::
 
 ### Check selected java version {#check-java-version}
-Most Minecraft versions require specific Java version. Make sure to try launching minecraft using "Recommended" Java setting in the launcher preferences
+Most Minecraft versions require a specific Java version. Try launching Minecraft using the "Recommended" Java setting in the launcher preferences
 
 ### Removing duplicate mods {#remove-duplicates}
 Most mod loaders fail when encountering multiple versions of the same mod. Ensure each mod is installed only once.  
@@ -145,7 +144,7 @@ Many mod loaders display a window describing the issue. Often, they highlight du
 ### Reset configuration files {#drop-configs}
 Corrupted configuration files are a common issue. Rename the `config` folder in the game directory (or delete it if there's nothing important to you inside) and try launching the game. Mods will re-create the folder and all files inside.
 
-### Try the "refresh client" option {#force-update}
+### Try the "Force update" option {#force-update}
 Your game files may be corrupted. Re-download them using the "Force update" checkbox or [manually reinstall the version](/tags/modloader).
 
 ### Check launcher settings {#check-args}

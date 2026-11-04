@@ -4,20 +4,20 @@ sidebar_position: 4
 ---
 # Альтернативы OptiFine
 OptiFine - крайне нестабильный мод, имеющий огромное количество проблем с несовместимостью с другими модификациями.  
-На этой странице предоставлены моды, способные заменить функционал OptiFine.
+На этой странице представлены моды, способные заменить функционал OptiFine.
 
 ## Оптимизация {#optimization}
 * Sodium ([Fabric/NeoForge](https://modrinth.com/mod/sodium), [Forge](https://modrinth.com/mod/embeddium)) - основной слой оптимизации рендеринга и взаимодействия с видеокартой
-    * Indium ([Fabric](https://modrinth.com/mod/indium)) - слой совместимости Sodium с модами, использующими Fabric API
+    * Indium ([Fabric](https://modrinth.com/mod/indium)) - слой совместимости Sodium с модами, использующими Fabric Rendering API. Нужен только для Sodium до версии 0.6.0
     * Reese's Sodium Options ([Fabric](https://modrinth.com/mod/reeses-sodium-options), [Forge](https://modrinth.com/mod/textrues-embeddium-options)) - расширенные настройки для Sodium
     * Sodium Extra ([Fabric](https://modrinth.com/mod/sodium-extra), [Forge](https://modrinth.com/mod/rubidium-extra)) - более подробные настройки графики (например, анимаций, частиц, показа неба, погоды...)
 * Cull Leaves ([Forge/Fabric](https://modrinth.com/mod/cull-leaves)) - аналог Smart Leaves
 * Entity Culling ([Forge/Fabric](https://modrinth.com/mod/entityculling)) - отключает рендер невидимых для игрока существ
-* Lithium: ([Fabric](https://modrinth.com/mod/lithium), [Forge](https://modrinth.com/mod/canary), [Forge (другой порт)](https://modrinth.com/mod/radium)) - оптимизация внутриигрового сервера
-* Phosphor ([Fabric](https://modrinth.com/mod/phosphor), [Forge](https://modrinth.com/mod/radon)) - оптимизация освещения
+* Lithium ([Fabric](https://modrinth.com/mod/lithium), [Forge](https://modrinth.com/mod/canary), [Forge (другой порт)](https://modrinth.com/mod/radium)) - оптимизация внутриигрового сервера
+* Phosphor ([Fabric](https://modrinth.com/mod/phosphor), [Forge](https://modrinth.com/mod/radon)) - оптимизация освещения. Не обновляется после 1.19
     :::warning[Данный мод конфликтует со Starlight]
     :::
-* Starlight ([Fabric](https://modrinth.com/mod/starlight), [Forge](https://modrinth.com/mod/starlight-forge)) - улучшенная оптимизация освещения, но может быть несовместима с некоторыми модами
+* Starlight ([Fabric](https://modrinth.com/mod/starlight), [Forge](https://modrinth.com/mod/starlight-forge)) - улучшенная оптимизация освещения, но может быть несовместима с некоторыми модами. Начиная с 1.20 не дает особого эффекта
     :::warning[Данный мод конфликтует с Phosphor]
     :::
 * FerriteCore ([Forge/Fabric](https://modrinth.com/mod/ferrite-core)) - оптимизация использования памяти
@@ -26,7 +26,7 @@ OptiFine - крайне нестабильный мод, имеющий огро
     Хотя этот мод способен значительно увеличить производительность игры, он [сломает все моды](https://github.com/xCollateral/VulkanMod/discussions/226), использующие OpenGL напрямую
     :::
 
-## Функционал для ресурспаков {#featutes}
+## Функционал для ресурспаков {#features}
 * LambDynamicLights ([Fabric](https://modrinth.com/mod/lambdynamiclights), [Forge](https://www.curseforge.com/minecraft/mc-mods/dynamiclights-reforged)) - динамическое освещение
 * LambdaBetterGrass ([Fabric](https://modrinth.com/mod/lambdabettergrass)) - улучшенное отображение травы и снега
 * OptiGUI ([Fabric](https://modrinth.com/mod/optigui)) - поддержка модификации интерфейса ресурспаками

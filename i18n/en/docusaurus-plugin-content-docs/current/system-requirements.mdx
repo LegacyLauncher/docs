@@ -1,0 +1,223 @@
+---
+sidebar_position: 1
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# System Requirements
+
+## Minecraft System Requirements {#minecraft}
+:::info[Sources]
+The game's system requirements were taken from official sources:
+- [Minecraft.net](https://www.minecraft.net/en-us/article/minecraft-java-edition-system-requirements)
+- [Minecraft Wiki](https://minecraft.wiki/w/Java_Edition)
+- Archived revisions of help.mojang.com
+- News posts on feedback.minecraft.net
+
+The system requirements have been adjusted according to the requirements of the **Java** versions provided by the launcher
+:::
+
+:::tip[How to read these tables]
+- **Game RAM** - the amount of RAM to allocate in the launcher. It must be less than the RAM available in the system.
+- **Game RAM with mods** - the amount of RAM to allocate in the launcher when playing popular modpacks
+
+These requirements are a **guideline** - the game **may** run on systems that do not meet the minimum requirements. What matters most is that the OpenGL/Vulkan version requirement is met and that the Java version required by the game is supported by your OS
+:::
+
+<Tabs groupId="mcje-sysreq" queryString="period">
+
+<TabItem value="26.2" label="26.2+" default>
+
+:::note[Vulkan support]
+**26.2** is the first version with experimental Vulkan support  
+Starting with **26.4**, Vulkan support leaves the experimental phase
+:::
+
+| Parameter | Minimum | Recommended |
+|---|---|---|
+| OS and architecture | Windows 10 (x64/arm64) or newer; macOS 12 (x64/arm64) or newer; Linux (x64) | Windows 11 (x64/arm64); macOS 14 (x64/arm64) or newer; Linux (x64) |
+| System RAM | 8 GiB with a discrete GPU, 12 GiB with an integrated GPU | 16 GiB |
+| Game RAM | 4 GiB | 4 GiB |
+| Game RAM with mods | 6 GiB or more | 10 GiB or more |
+| CPU | 4 physical cores at 3.6 GHz: Intel Core i3-10100, AMD Ryzen 3 3100, Qualcomm Snapdragon X, Apple M1 | 6 cores / 12 threads: Intel Core i5-12400, AMD Ryzen 5 5600, Apple M2 Pro |
+| GPU | Vulkan 1.3, 2 GiB VRAM: NVIDIA GTX 950, AMD RX 460, Intel Arc A310 or HD 530 (i5-6400), Apple M1, Snapdragon X | 6 GiB VRAM: NVIDIA RTX 2060, AMD RX 5600 XT, Intel Arc A580, Apple M2 Pro |
+| Storage | 2 GB | 4 GB, SSD recommended |
+
+</TabItem>
+
+<TabItem value="1.19" label="1.19+">
+
+:::note[Architecture support]
+**Windows on ARM** is supported since **1.20**  
+**Apple Silicon** (macOS arm64) is supported since **1.19**
+:::
+
+:::warning[Please note]
+Support for 32-bit (x86) operating systems was **dropped** in 1.20.5
+:::
+
+:::tip
+Despite the OpenGL 4.4 requirement, the game actually uses OpenGL 3.2
+:::
+
+| Parameter | Minimum | Recommended |
+|---|---|---|
+| OS and architecture | Windows 7 (x86/x64), Windows 10 (arm64) or newer; macOS 10.14.5 (x64), macOS 11 (arm64) or newer; Linux (x64) | Windows 10 (x64/arm64) or newer; macOS 10.14.5 (x64), macOS 11 (arm64) or newer; Linux (x64) |
+| System RAM | 4 GiB | 8 GiB |
+| Game RAM | 2 GiB | 4 GiB |
+| Game RAM with mods | 6 GiB | 10 GiB |
+| CPU | 2 cores at 3.1 GHz: Intel Core i3-3210, AMD A8-7600, Apple M1 | 4 cores at 3.5 GHz: Intel Core i5-4690, AMD A10-7800, Apple M1 |
+| GPU | OpenGL 4.4: Intel HD 4000, AMD Radeon R5, NVIDIA GeForce 400, AMD Radeon HD 7000 | OpenGL 4.5: NVIDIA GeForce 700, AMD Radeon R7 200 |
+| Storage | 1 GB | 4 GB, SSD recommended |
+
+</TabItem>
+
+<TabItem value="1.18" label="1.18+">
+
+:::tip
+Despite the OpenGL 4.4 requirement, the game actually uses OpenGL 3.2
+:::
+
+:::warning[For macOS users]
+There are known issues with running older (pre-1.19) versions of the game on Apple Silicon. Please update to Minecraft 1.19 or newer.
+:::
+
+| Parameter | Minimum | Recommended |
+|---|---|---|
+| OS and architecture | Windows 7 (x86/x64) or newer; macOS 10.14.5 (x64) or newer; Linux (x64) | Windows 10 (x64) or newer; macOS 10.14.5 (x64) or newer; Linux (x64) |
+| System RAM | 4 GiB | 8 GiB |
+| Game RAM | 2 GiB | 4 GiB |
+| Game RAM with mods | 6 GiB | 10 GiB |
+| CPU | 2 cores at 3.1 GHz: Intel Core i3-3210, AMD A8-7600 | 4 cores at 3.5 GHz: Intel Core i5-4690, AMD A10-7800 |
+| GPU | OpenGL 4.4: Intel HD 4000, AMD Radeon R5, NVIDIA GeForce 400, AMD Radeon HD 7000 | OpenGL 4.5: NVIDIA GeForce 700, AMD Radeon R7 200 |
+| Storage | 1 GB | 2 GB |
+
+</TabItem>
+
+<TabItem value="1.17" label="1.17+">
+
+:::tip
+Despite the OpenGL 4.4 requirement, the game actually uses OpenGL 3.2
+:::
+
+:::warning[For macOS users]
+There are known issues with running older (pre-1.19) versions of the game on Apple Silicon. Please update to Minecraft 1.19 or newer.
+:::
+
+| Parameter | Minimum | Recommended |
+|---|---|---|
+| OS and architecture | Windows 7 (x86/x64) or newer; OS X 10.9 (x64) or newer; Linux (x64) | Windows 10 (x64) or newer; macOS 10.12 (x64) or newer; Linux (x64) |
+| System RAM | 4 GiB | 8 GiB |
+| Game RAM | 2 GiB | 4 GiB |
+| Game RAM with mods | 6 GiB | 8 GiB |
+| CPU | 2 cores at 3.1 GHz: Intel Core i3-3210, AMD A8-7600 | 4 cores at 3.5 GHz: Intel Core i5-4690, AMD A10-7800 |
+| GPU | OpenGL 4.4: Intel HD 4000, AMD Radeon R5, NVIDIA GeForce 400, AMD Radeon HD 7000 | OpenGL 4.5: NVIDIA GeForce 700, AMD Radeon R7 200 |
+| Storage | 1 GB | 2 GB |
+
+</TabItem>
+
+<TabItem value="1.12" label="1.12+">
+
+:::tip
+Despite the OpenGL 4.4 requirement, the game actually uses OpenGL 2.x  
+According to user reports, the `jre-legacy` Java version used by the game also works on Windows XP
+:::
+
+:::warning[For macOS users]
+There are known issues with running older (pre-1.19) versions of the game on Apple Silicon. Please update to Minecraft 1.19 or newer.
+:::
+
+| Parameter | Minimum | Recommended |
+|---|---|---|
+| OS and architecture | Windows 7 (x86/x64) or newer; OS X 10.9 (x64) or newer; Linux (x64) | Windows 10 (x64) or newer; macOS 10.12 (x64) or newer; Linux (x64) |
+| System RAM | 4 GiB | 8 GiB |
+| Game RAM | 1 GiB | 2 GiB |
+| Game RAM with mods | 4 GiB | 8 GiB or more |
+| CPU | 2 cores at 3.1 GHz: Intel Core i3-3210, AMD A8-7600 | 4 cores at 3.5 GHz: Intel Core i5-4690, AMD A10-7800 |
+| GPU | OpenGL 4.4: Intel HD 4000, AMD Radeon R5, NVIDIA GeForce 400, AMD Radeon HD 7000 | OpenGL 4.5: NVIDIA GeForce 700, AMD Radeon R7 200 |
+| Storage | 1 GB | 2 GB |
+
+</TabItem>
+
+<TabItem value="1.8" label="1.8+">
+
+:::tip
+According to user reports, the `jre-legacy` Java version used by the game also works on Windows XP
+:::
+
+:::warning[For macOS users]
+There are known issues with running older (pre-1.19) versions of the game on Apple Silicon. Please update to Minecraft 1.19 or newer.
+:::
+
+| Parameter | Minimum | Recommended |
+|---|---|---|
+| OS and architecture | Windows Vista SP2 (x86/x64) or newer; OS X 10.8.3 (x64) or newer; Linux (x64) | Windows Vista SP2 (x86/x64) or newer; OS X 10.8.3 (x64) or newer; Linux (x64) |
+| System RAM | 2 GiB | 4 GiB |
+| Game RAM | 1 GiB | 2 GiB |
+| Game RAM with mods | 2 GiB | 4 GiB |
+| CPU | Intel Pentium D, AMD Athlon 64 (K8) or equivalent | 2 cores at 2.8 GHz: Intel Core i3 (1st gen), AMD Athlon II (K10) |
+| GPU | OpenGL 2.1: Intel HD, AMD Radeon HD (integrated); OpenGL 3.1: NVIDIA GeForce 9600 GT, AMD Radeon HD 2400 | OpenGL 3.3: NVIDIA GeForce 2xx, AMD Radeon HD 5xxx |
+| Storage | 200 MB | 1 GB |
+
+</TabItem>
+
+<TabItem value="1.6" label="1.6+">
+
+:::tip
+According to user reports, the `jre-legacy` Java version used by the game also works on Windows XP
+:::
+
+:::warning[For macOS users]
+There are known issues with running older (pre-1.19) versions of the game on Apple Silicon. Please update to Minecraft 1.19 or newer.
+:::
+
+| Parameter | Minimum | Recommended |
+|---|---|---|
+| OS and architecture | Windows Vista SP2 (x86/x64) or newer; OS X 10.8.3 (x64) or newer; Linux (x64) | Windows Vista SP2 (x86/x64) or newer; OS X 10.8.3 (x64) or newer; Linux (x64) |
+| System RAM | 2 GiB | 4 GiB |
+| Game RAM | 1 GiB | 2 GiB |
+| Game RAM with mods | 2 GiB | 4 GiB |
+| CPU | 1 core: Intel Pentium 4, AMD Athlon (K7) | 1-2 cores at 2.6 GHz: Intel Pentium D, AMD Athlon 64 (K8) |
+| GPU | OpenGL 1.2 (2.1 since late 2013): Intel GMA 950 or AMD equivalent | OpenGL 2: NVIDIA GeForce 6xxx, ATI Radeon 9xxx |
+| Storage | 90-100 MB | 150 MB |
+
+</TabItem>
+
+<TabItem value="1.5.2-older" label="1.5.2 and older">
+
+:::tip
+According to user reports, the `jre-legacy` Java version used by the game also works on Windows XP
+:::
+
+:::warning[For macOS users]
+There are known issues with running older (pre-1.19) versions of the game on Apple Silicon. Please update to Minecraft 1.19 or newer.
+:::
+
+| Parameter | Minimum | Recommended |
+|---|---|---|
+| OS and architecture | Windows Vista SP2 (x86/x64) or newer; OS X 10.8.3 (x64) or newer; Linux (x64) | Windows Vista SP2 (x86/x64) or newer; OS X 10.8.3 (x64) or newer; Linux (x64) |
+| System RAM | 1 GiB | 2 GiB |
+| Game RAM | 512 MiB | 1 GiB |
+| Game RAM with mods | 2 GiB | 4 GiB |
+| CPU | Intel Pentium 4, AMD Athlon (K7) or equivalent | Intel Pentium D, AMD Athlon 64 (K8) or equivalent |
+| GPU | OpenGL 1.2: Intel GMA 950 or AMD equivalent | OpenGL 2: NVIDIA GeForce 6xxx, ATI Radeon 9xxx |
+| Storage | 90 MB | 150 MB |
+
+</TabItem>
+
+</Tabs>
+
+## Launcher System Requirements {#launcher}
+* **Jar version of the launcher**: Any OS with Java 8 or newer installed (Java 11 or newer is recommended)
+  * **Linux-specific**: `xdg-desktop-portal` implementation matching your desktop environment
+* **Installer for Windows**: Windows 7 SP1 (x64) or newer
+* **Version for Flathub**: Any Linux distribution with Flatpak support, `xdg-desktop-portal` implementation matching your desktop environment
+
+:::info[Please note!]
+Legacy Launcher does not support the Bedrock edition of Minecraft or games other than Minecraft: Java Edition
+:::
+
+:::info[Please note!]
+Legacy Launcher does not have a version for mobile devices
+:::

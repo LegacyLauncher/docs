@@ -1,9 +1,9 @@
 ---
-descriptions: Customizing Minecraft versions
+description: Customizing Minecraft versions
 sidebar_position: 5
 ---
 # Version cloning
-This guide will be useful for modpack creators and players who want to keep multiple modpacks for same version using "[Subfolders](../launcher/subfolders)" feature.
+This guide will be useful for modpack creators and players who want to keep multiple modpacks for the same version using the "[Subfolders](../launcher/subfolders)" feature.
 :::info
 This page requires localization of _one_ screenshot. Feel free to [open a PR](https://github.com/LegacyLauncher/docs) if you want to help!
 :::
@@ -27,7 +27,7 @@ This guide assumes you're using "[Subfolders](../launcher/subfolders)" feature
 7. Open renamed folder. Rename both jar and json files to the same name as folder.
     ![Rename files in the folder](./img/clone-files-rename.png)
     :::warning
-    Folder name **must be the same** as contained files names, otherwise the launcher **will not be able** to detect this version.  
+    Folder name **must be the same** as the names of the files inside it, otherwise the launcher **will not be able** to detect this version.  
     For example: if folder name is `MyCoolModpack 1.21.3` it must contain `MyCoolModpack 1.21.3.json` and `MyCoolModpack 1.21.3.jar` files, all other files will be ignored.
     :::
 8. Open renamed json file with any text editor (e.g. [Notepad++](https://notepad-plus-plus.org/downloads/))
@@ -48,7 +48,7 @@ This guide assumes you're using "[Subfolders](../launcher/subfolders)" feature
         "minimumLauncherVersion": 21,
         …
     ```
-    * If you're using "Subfolders" feature in "Separate folder for each family" mode you must also rename the `family` field. *The family name is not required to be the same as the version name, and you can use one family name for multiple versions*
+    * If you're using "Subfolders" feature in "Separate folder for each family" mode you must also change the `family` field value. *The family name is not required to be the same as the version name, and you can use one family name for multiple versions*
         ```json
         {
             "id": "MyCoolModpack 1.19.2",
