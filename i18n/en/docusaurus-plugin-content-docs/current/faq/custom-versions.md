@@ -38,9 +38,9 @@ This guide assumes you're using "[Subfolders](../launcher/subfolders)" feature
     ```json
     {
         // highlight-next-line
-        "id": "MyCoolModpack 1.19.2",
-        "jar": "1.19.2",
-        "family": "Forge-1.19",
+        "id": "MyCoolModpack 1.21.3",
+        "jar": "1.21.3",
+        "family": "Forge-1.21",
         "time": "2023-09-16T19:39:53.686Z",
         "releaseTime": "2022-08-05T11:57:05Z",
         "type": "modified",
@@ -51,8 +51,8 @@ This guide assumes you're using "[Subfolders](../launcher/subfolders)" feature
     * If you're using "Subfolders" feature in "Separate folder for each family" mode you must also change the `family` field value. *The family name is not required to be the same as the version name, and you can use one family name for multiple versions*
         ```json
         {
-            "id": "MyCoolModpack 1.19.2",
-            "jar": "1.19.2",
+            "id": "MyCoolModpack 1.21.3",
+            "jar": "1.21.3",
             // highlight-next-line
             "family": "mycoolmodpack",
             "time": "2023-09-16T19:39:53.686Z",

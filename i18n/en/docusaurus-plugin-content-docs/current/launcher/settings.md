@@ -121,6 +121,9 @@ description: Detailed description of all launcher preferences
 * **Java settings**
     * **Path**: path to used Java executable
     * **Java arguments**: JVM (Java) arguments, e.g. `-Xmx` or `-Xms`
+        :::warning
+        Do not specify a garbage collector here (`-XX:+UseG1GC`, `-XX:+UseZGC`, `-XX:+UseShenandoahGC` and similar) - the launcher selects it itself in the "Optimized arguments" option. With two collectors at once Java will not start (the `Multiple garbage collectors selected` error). If you want to specify a garbage collector yourself, disable optimized arguments
+        :::
         * **Update outdated SSL certificate storage**: Swaps the root certificate store in older versions of Java with an up-to-date one via Java arguments
         :::note
         This function does not modify Java files.  

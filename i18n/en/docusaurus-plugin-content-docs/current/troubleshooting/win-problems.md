@@ -71,6 +71,7 @@ In some cases, the game cannot run due to Windows corruption.
     :::danger[Modified Windows Versions]
     If you use a modified version of Windows, required components for both game operation and Windows restoration might be damaged or missing. Reinstall Windows using an original installation image.
     :::
+6. If the scan reports that some files could not be restored, type `DISM /Online /Cleanup-Image /RestoreHealth`, press Enter and wait for it to finish (an internet connection is required). Then run `sfc /scannow` again.
 
 ## Disable Programs Interfering with Others {#injectors}
 Game stability can be affected by programs that interfere with others for optimization, overclocking, monitoring, or cheating purposes.
