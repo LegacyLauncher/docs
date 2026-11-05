@@ -135,7 +135,7 @@ Forge, OptiFine и LiteLoader для версий до 1.12.2, а также с�
 Ни в коем случае не пытайтесь вручную удалить или заменить проблемный dll-файл! Вы можете усугубить проблему или сломать вашу ОС!
 :::
 :::tip
-Вы можете _попробовать_ решить данную проблему с помощью [этой инструкции](./win-problems#replace-java)
+Вы можете _попробовать_ решить данную проблему с помощью [этой инструкции](./win-problems)
 :::
 
 ### Код выхода 1114 {#exit-code-1114}
@@ -237,9 +237,9 @@ Forge, OptiFine и LiteLoader для версий до 1.12.2, а также с�
 // highlight-next-line
 > [14:49:52] [main/INFO] [STDERR/]: [org.lwjgl.glfw.GLFWErrorCallback$1:invoke:105]:    Description : Invalid axis in gamepad mapping 03000000790000000600000000000000 (G-Shark GS-GP702)
 > [14:49:52] [main/INFO] [STDERR/]: [org.lwjgl.glfw.GLFWErrorCallback$1:invoke:106]:    Stacktrace  :
->       [14:49:52] [main/INFO] [STDERR/]: [org.lwjgl.glfw.GLFWErrorCallback$1:invoke:110]: org.lwjgl.glfw.GLFW.glfwInit(GLFW.java:830)
->       [14:49:52] [main/INFO] [STDERR/]: [org.lwjgl.glfw.GLFWErrorCallback$1:invoke:110]: net.minecraftforge.fml.loading.progress.ClientVisualization.initWindow(ClientVisualization.java:58)
->       [14:49:52] [main/INFO] [STDERR/]: [org.lwjgl.glfw.GLFWErrorCallback$1:invoke:110]: net.minecraftforge.fml.loading.progress.ClientVisualization.start(ClientVisualization.java:335)
+> [14:49:52] [main/INFO] [STDERR/]: [org.lwjgl.glfw.GLFWErrorCallback$1:invoke:110]: org.lwjgl.glfw.GLFW.glfwInit(GLFW.java:830)
+> [14:49:52] [main/INFO] [STDERR/]: [org.lwjgl.glfw.GLFWErrorCallback$1:invoke:110]: net.minecraftforge.fml.loading.progress.ClientVisualization.initWindow(ClientVisualization.java:58)
+> [14:49:52] [main/INFO] [STDERR/]: [org.lwjgl.glfw.GLFWErrorCallback$1:invoke:110]: net.minecraftforge.fml.loading.progress.ClientVisualization.start(ClientVisualization.java:335)
 ```
 Строка "Invalid axis in gamepad mapping" в логе указывает на некорректную работу устройства. Отключите проблемные устройства для запуска игры.
 
