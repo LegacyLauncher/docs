@@ -11,9 +11,9 @@ This guide is for unclear crashes related to Java, specifically on Windows. We r
 :::
 Do you often see `EXCEPTION_ACCESS_VIOLATION` errors in the logs or Minecraft crashes with weird `exit code`? Try this manual!
 :::warning
-If you've been directed here, it means the cause of the error is **unknown to us**, and the issue occurred **on Java's side or in a system library**.  
-This guide contains various _potential_ solutions based on user reports.  
-If you encounter an issue and resolve it using this guide, please let us know which step helped you.  
+If you've been directed here, it means the cause of the error is **unknown to us**, and the issue occurred **on Java's side or in a system library**. \
+This guide contains various _potential_ solutions based on user reports. \
+If you encounter an issue and resolve it using this guide, please let us know which step helped you. \
 If you find your own solution after being directed here, please share it with us as well. You might help other players!
 :::
 
@@ -29,9 +29,9 @@ We've prepared a ready-to-use package for replacing Java. Follow [this guide](..
 
 ## Disable "Optimized arguments" {#disable-arguments}
 The launcher adds a set of Java settings designed for smoother and more stable gameplay, but in some cases, the effect can be the opposite.
-1. Open the launcher settings, go to the "Minecraft" tab, and navigate to Java settings.
+1. Open the launcher settings, go to the "Minecraft" tab, and navigate to Java settings. \
     ![Settings => Minecraft => Java/JRE => Configure...](./img/configure-button-en.png)
-2. In the opened window, select "Disable" in the "Improved JVM arguments" list (in older launcher versions, uncheck the "Also use optimized arguments" box).
+2. In the opened window, select "Disable" in the "Improved JVM arguments" list (in older launcher versions, uncheck the "Also use optimized arguments" box). \
     ![Also use optimized arguments](./img/optimized-arguments-off-en.png)
     :::note
     In newer launcher versions, you can try a different set of optimized arguments instead of completely disabling them.
@@ -61,11 +61,11 @@ Game issues often arise due to graphics driver updates or corruption. If this do
 ## Windows Corruption {#windows}
 In some cases, the game cannot run due to Windows corruption.
 1. Open the Start menu.
-2. Type "Command Prompt."
+2. Type "Command Prompt." \
     ![Search for Command Prompt in Start](./img/command-prompt-ru-0.png)
-3. Select "Run as Administrator" and confirm.
+3. Select "Run as Administrator" and confirm. \
     ![Run as Administrator](./img/command-prompt-ru-1.png)
-4. In the opened window, type `sfc /scannow` and press Enter.
+4. In the opened window, type `sfc /scannow` and press Enter. \
     ![Run the command](./img/command-prompt-ru-2.png)
 5. Wait for a message confirming the scan's completion and **absence of issues** or the restoration of **all** corrupted files.
     :::danger[Modified Windows Versions]
@@ -84,5 +84,5 @@ Game stability can be affected by programs that interfere with others for optimi
 * Temporarily disable your antivirus software.
 
 ## Nothing Helps? {#nothing-helps}
-Unfortunately, your issue is not related to the launcher, and we can't help you with it. Everything we could suggest is already listed on this page.  
+Unfortunately, your issue is not related to the launcher, and we can't help you with it. Everything we could suggest is already listed on this page. \
 Try to find a solution yourself - if you succeed, please share it with us!

@@ -6,7 +6,7 @@ sidebar_position: 3
 
 Крашится игра?
 Вы можете попробовать найти причину проблемы самостоятельно.
-Для этого нажмите в окне ошибки кнопку "открыть логи" или включите в настройках лаунчера "журнал событий". Ниже мы перечислим относительно простые и распространенные проблемы запуска игры, в том числе с модами.  
+Для этого нажмите в окне ошибки кнопку "открыть логи" или включите в настройках лаунчера "журнал событий". Ниже мы перечислим относительно простые и распространенные проблемы запуска игры, в том числе с модами. \
 **Все примеры ниже основаны на реальных обращениях наших пользователей**.
 
 :::tip[Как найти нужный раздел]
@@ -50,7 +50,7 @@ Fabric сообщает о неподходящей Java так же, как о 
 // highlight-next-line
 >   java.lang.UnsupportedClassVersionError: net/minecraft/client/main/Main has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
 ```
-Та же ошибка `UnsupportedClassVersionError` возникает при запуске самой игры на слишком старой Java.  
+Та же ошибка `UnsupportedClassVersionError` возникает при запуске самой игры на слишком старой Java. \
 Выберите в настройках лаунчера "Рекомендуемую" Java. Если она уже выбрана - воспользуйтесь галочкой "Обновить клиент"
 
 На NeoForge та же проблема может выглядеть иначе - игра падает еще до загрузки модов:
@@ -110,7 +110,7 @@ Forge, OptiFine и LiteLoader для версий до 1.12.2, а также с�
 [:] #   https://github.com/microsoft/openjdk/issues
 [:] #
 ```
-В подобных логах два ключевых момента: ошибка (в примере выше это `EXCEPTION_ACCESS_VIOLATION`) и библиотека, в которой произошла эта ошибка (`jvm.dll`).  
+В подобных логах два ключевых момента: ошибка (в примере выше это `EXCEPTION_ACCESS_VIOLATION`) и библиотека, в которой произошла эта ошибка (`jvm.dll`). \
 Типичные способы решения - отследить, к какому компоненту относится ошибка, и удалить его (если это стороннее ПО, например, SafeIP), либо обновить/откатить (если это Java или драйвер видеокарты).
 
 По имени библиотеки можно понять, к чему она относится:
@@ -146,7 +146,7 @@ Forge, OptiFine и LiteLoader для версий до 1.12.2, а также с�
 // highlight-next-line
 19:21:28,697 [MinecraftLauncher] Child process closed with exit code: 1114 (0x45a)
 ```
-Код 1114 означает, что драйвер видеокарты не смог запуститься. Чаще всего это происходит на ноутбуках с двумя видеокартами - встроенной Intel и дискретной AMD.  
+Код 1114 означает, что драйвер видеокарты не смог запуститься. Чаще всего это происходит на ноутбуках с двумя видеокартами - встроенной Intel и дискретной AMD. \
 Решение - включите в Windows схему электропитания "Максимальная производительность". Переустанавливать драйвер при этом обычно не нужно
 
 ### Нехватка памяти {#out-of-memory}
@@ -404,9 +404,9 @@ VulkanMod производит глубокую модификацию движ�
 > [00:23:02] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:682]:  at org.spongepowered.asm.mixin.transformer.MixinTargetContext.applyInjections(MixinTargetContext.java:1362)
 > [00:23:02] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:682]:  ... 25 more
 ```
-Посмотрите на строчку, начинающуюся на `Caused by`: в ней мы видим, что проблема в моде magnesium: `Critical injection failure: Redirector redirectGetFancyWeather()Z in magnesium.mixins.json:features.options.MixinWorldRenderer failed injection check`.  
-Виноват мод, которому принадлежит файл `*.mixins.json` из этой строки (здесь `magnesium.mixins.json`). Скорее всего, он сделан для другой версии игры - установите версию мода для вашей версии игры или удалите его.  
-Если один мод дополняет другой (например, Iris и Sodium, дополнение и основной мод), их версии должны подходить друг к другу - обновляйте их вместе.  
+Посмотрите на строчку, начинающуюся на `Caused by`: в ней мы видим, что проблема в моде magnesium: `Critical injection failure: Redirector redirectGetFancyWeather()Z in magnesium.mixins.json:features.options.MixinWorldRenderer failed injection check`. \
+Виноват мод, которому принадлежит файл `*.mixins.json` из этой строки (здесь `magnesium.mixins.json`). Скорее всего, он сделан для другой версии игры - установите версию мода для вашей версии игры или удалите его. \
+Если один мод дополняет другой (например, Iris и Sodium, дополнение и основной мод), их версии должны подходить друг к другу - обновляйте их вместе.
 
 #### Строки `at` {#at-lines}
 Иногда проблемный мод появится не в самой строчке `Caused by`, а в одной из строчек `at` ниже:
@@ -465,7 +465,7 @@ VulkanMod производит глубокую модификацию движ�
 * `javafx/` - мод не может работать на Java, с которой запускается игра. Удалите его
 * `org/lwjgl`, `io/netty`, `com/google/common` - это библиотеки самой игры. Воспользуйтесь галочкой "Обновить клиент"
 
-Если нужный мод уже установлен - обновите его: в установленной версии нет нужного класса.  
+Если нужный мод уже установлен - обновите его: в установленной версии нет нужного класса. \
 Если непонятно, какой мод нужен - поищите на [Modrinth](https://modrinth.com/mods) по части имени класса. Например, для `blusunrize/immersiveengineering/...` - по слову `immersiveengineering`
 
 #### Недостающие зависимости {#missing-dependencies}
@@ -590,7 +590,7 @@ Fabric не всегда прямо называет мод, из-за кото�
 > Caused by: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException: Invalid descriptor on sodium-extra.mixins.json:toasts.MixinTutorialToast from mod sodium-extra->@Inject::draw(Lnet/minecraft/class_4587;Lnet/minecraft/class_374;JLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V! Expected (Lnet/minecraft/class_332;Lnet/minecraft/class_374;JLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V but found (Lnet/minecraft/class_4587;Lnet/minecraft/class_374;JLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V [INJECT Applicator Phase -> sodium-extra.mixins.json:toasts.MixinTutorialToast from mod sodium-extra -> Apply Injections ->  -> Inject -> sodium-extra.mixins.json:toasts.MixinTutorialToast from mod sodium-extra->@Inject::draw(Lnet/minecraft/class_4587;Lnet/minecraft/class_374;JLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V]
 >   at org.spongepowered.asm.mixin.injection.callback.CallbackInjector.inject(CallbackInjector.java:567)
 ```
-На этот раз Fabric нам не может явно указать на проблемный мод, но мы можем узнать его из сообщения о причинах ошибки (`Caused by:`): `Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [sodium-extra.mixins.json:toasts.MixinTutorialToast from mod sodium-extra]`.  
+На этот раз Fabric нам не может явно указать на проблемный мод, но мы можем узнать его из сообщения о причинах ошибки (`Caused by:`): `Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [sodium-extra.mixins.json:toasts.MixinTutorialToast from mod sodium-extra]`. \
 Мы видим, что проблемой стал мод `sodium-extra` (ему принадлежит `sodium-extra.mixins.json`). Скорее всего, он сделан для другой версии игры - установите версию мода для вашей версии игры или удалите его
 
 #### Ошибка во время игры {#fabric-runtime-error}
@@ -616,7 +616,7 @@ Fabric не всегда прямо называет мод, из-за кото�
 >    - Mod 'GoProne' (goprone) 3.1.3 requires any version between 0.14.21 (inclusive) and 0.15- (exclusive) of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.15.7!
 >   at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:51) ~[fabric-loader-0.15.7.jar:?]
 ```
-Вы должны установить моды, отвечающие требованиям установленных модов.  
+Вы должны установить моды, отвечающие требованиям установленных модов. \
 Например, в данном случае мод требует версию Fabric Loader `0.14.25 или новее`, но при этом `старее, чем 0.15`, из-за чего ему не подходит используемая версия `0.15.7`. Обновление мода или установка требуемой версии `fabric-loader` исправит эту проблему.
 
 #### Indium {#indium}
@@ -644,7 +644,7 @@ Caused by: java.util.zip.ZipException: zip END header not found
     at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1315)
 
 ```
-Ошибка `java.util.zip.ZipException: zip END header not found` в логе сигнализирует о повреждении файлов игры и/или модов. Воспользуйтесь галочкой "Обновить клиент", перекачайте моды с CurseForge/Modrinth.  
+Ошибка `java.util.zip.ZipException: zip END header not found` в логе сигнализирует о повреждении файлов игры и/или модов. Воспользуйтесь галочкой "Обновить клиент", перекачайте моды с CurseForge/Modrinth. \
 Если файлы снова оказываются повреждены после скачивания - проверьте диск на ошибки
 :::tip[Особенности Fabric и Quilt]
 Fabric и Quilt хранят часть данных игры в папках `.fabric` и `.cache` в папке игры. Если ошибка указывает на файл из этих папок - удалите папку, загрузчик создаст её заново. Скачивать такой файл повторно бесполезно
@@ -675,7 +675,7 @@ net.legacylauncher.minecraft.launcher.MinecraftException: Classpath is not found
 > Caused by: com.electronwill.nightconfig.core.io.ParsingException: Not enough data available
 >   at com.electronwill.nightconfig.core.io.ParsingException.notEnoughData(ParsingException.java:22) ~[core-3.6.3.jar:?] {}
 ```
-Подобные ошибки характеризуются наличием слова "config" или "settings" в ошибке. В данном примере можно увидеть, что поломался файл настроек `flywheel-client.toml` мода `flywheel`.  
-Подобные проблемы решаются крайне просто - удалением соответствующего файла из папки `config` в папке игры, либо удалением всей папки `config` целиком - моды пересоздадут свои файлы настроек.  
-Если у вас есть исходная папка `config` (например, в архиве сборки) - лучше замените ею текущую.  
+Подобные ошибки характеризуются наличием слова "config" или "settings" в ошибке. В данном примере можно увидеть, что поломался файл настроек `flywheel-client.toml` мода `flywheel`. \
+Подобные проблемы решаются крайне просто - удалением соответствующего файла из папки `config` в папке игры, либо удалением всей папки `config` целиком - моды пересоздадут свои файлы настроек. \
+Если у вас есть исходная папка `config` (например, в архиве сборки) - лучше замените ею текущую. \
 Некоторые моды хранят часть настроек в папке мира: если файла нет в папке `config`, поищите его в `saves/<название мира>/serverconfig`.

@@ -17,8 +17,8 @@ Legacy Launcher 161.0 or newer is required to use NeoForge
     1. Select "Install client"
     2. In the field below, select the path to the game folder. Make sure it is the same as in the launcher settings
         :::info[How to find the game folder?]
-        Start Legacy Launcher and click the button with the folder icon.  
-        *If you have the "Subfolders" feature enabled, select "Open Minecraft root folder"*.  
+        Start Legacy Launcher and click the button with the folder icon. \
+        *If you have the "Subfolders" feature enabled, select "Open Minecraft root folder"*. \
         You can also find it in the launcher settings, in the "Game folder" field
         :::
     3. Press "Proceed" button and wait until installation ends

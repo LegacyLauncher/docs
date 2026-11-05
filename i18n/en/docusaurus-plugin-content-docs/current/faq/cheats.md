@@ -13,11 +13,11 @@ Unofficial versions and mods are often used to spread malware. **Do not run** mo
 No. We do not specialize in this. The fact that cheats can run in our launcher is just a consequence of the fact that the launcher supports any version capable of running in a licensed launcher. **We do not endorse cheating and do not support cheat crashes**.
 
 ## A server found cheats in your launcher and banned me! {#cheats-in-launcher}
-**The launcher itself does not contain cheats.** If cheat files were found in your game folder - it means that you (or another user of your PC) downloaded them by yourself.  
+**The launcher itself does not contain cheats.** If cheat files were found in your game folder - it means that you (or another user of your PC) downloaded them by yourself. \
 Remember - deleting a cheat from the `versions` folder will not delete all cheat files. Want to be sure that the game folder is clean? Save the worlds and reinstall the whole game by deleting the game folder.
 
 ## I can not launch the cheat, the launcher can not download its files! {#download-errors}
-This problem is relevant for any third-party version.  
+This problem is relevant for any third-party version. \
 Launcher needs to download files from somewhere. If the version developer did not bother to provide working file links, the launcher will not be able to download these files. **If you have such problems, please contact the version developer.**
 
 ## The cheat does not launch without `-noverify`! {#nevorifly}

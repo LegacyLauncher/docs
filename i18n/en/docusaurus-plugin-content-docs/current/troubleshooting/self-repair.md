@@ -6,8 +6,8 @@ sidebar_position: 3
 
 Got a crash?
 You can try to find the cause yourself.
-Just press "Open Logs" button in error window or enable "Logger" in the launcher settings.  
-Following is a list of relatively simple to detect and common game launch issues, including issues with mods.  
+Just press "Open Logs" button in error window or enable "Logger" in the launcher settings. \
+Following is a list of relatively simple to detect and common game launch issues, including issues with mods. \
 **All examples below are based on real support requests from our users**.
 
 :::tip[How to find the right section]
@@ -51,7 +51,7 @@ There is no need to find and install the required Java yourself - do the same as
 // highlight-next-line
 >   java.lang.UnsupportedClassVersionError: net/minecraft/client/main/Main has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
 ```
-The same `UnsupportedClassVersionError` error occurs when the game itself is launched on a too old Java.  
+The same `UnsupportedClassVersionError` error occurs when the game itself is launched on a too old Java. \
 Select "Recommended" Java in the launcher settings. If it is already selected, use the "Force update" checkbox.
 
 On NeoForge the same problem may look different - the game crashes before loading mods:
@@ -147,7 +147,7 @@ The game closes right after the `Backend library: LWJGL version ...` line, and t
 // highlight-next-line
 19:21:28,697 [MinecraftLauncher] Child process closed with exit code: 1114 (0x45a)
 ```
-Code 1114 means that the graphics driver failed to start. This most often happens on laptops with two graphics cards - integrated Intel and discrete AMD.  
+Code 1114 means that the graphics driver failed to start. This most often happens on laptops with two graphics cards - integrated Intel and discrete AMD. \
 The solution is to switch the Windows power plan to maximum performance. Reinstalling the driver is usually not necessary
 
 ### Out of memory {#out-of-memory}
@@ -405,9 +405,9 @@ There should be a crash at the end of the log. It looks like a series of lines s
 > [00:23:02] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:682]:  at org.spongepowered.asm.mixin.transformer.MixinTargetContext.applyInjections(MixinTargetContext.java:1362)
 > [00:23:02] [main/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:682]:  ... 25 more
 ```
-Look at the line starting with `Caused by`: we can see that the problem is with the `magnesium` mod: `Critical injection failure: Redirector redirectGetFancyWeather()Z in magnesium.mixins.json:features.options.MixinWorldRenderer failed injection check`.  
-The culprit is the mod that owns the `*.mixins.json` file from this line (here it is `magnesium.mixins.json`). Most likely, it is made for a different game version - install the version of the mod for your game version or remove it.  
-If one mod extends another (e.g. Iris and Sodium, an addon and its base mod), their versions must match each other - update them together.  
+Look at the line starting with `Caused by`: we can see that the problem is with the `magnesium` mod: `Critical injection failure: Redirector redirectGetFancyWeather()Z in magnesium.mixins.json:features.options.MixinWorldRenderer failed injection check`. \
+The culprit is the mod that owns the `*.mixins.json` file from this line (here it is `magnesium.mixins.json`). Most likely, it is made for a different game version - install the version of the mod for your game version or remove it. \
+If one mod extends another (e.g. Iris and Sodium, an addon and its base mod), their versions must match each other - update them together.
 
 #### The `at` lines {#at-lines}
 Sometimes the problematic mod will appear not in the `Caused by` line itself, but in one of the `at` lines below:
@@ -467,7 +467,7 @@ However, `NoClassDefFoundError` does not always mean a missing mod. Look at how 
 * `javafx/` - the mod cannot work on the Java the game runs on. Remove it
 * `org/lwjgl`, `io/netty`, `com/google/common` - these are libraries of the game itself. Use the "Force update" checkbox
 
-If the required mod is already installed, update it: the installed version does not have the required class.  
+If the required mod is already installed, update it: the installed version does not have the required class. \
 If it is unclear which mod is required, search [Modrinth](https://modrinth.com/mods) for a part of the class name. For example, for `blusunrize/immersiveengineering/...` search for `immersiveengineering`
 
 #### Missing dependencies {#missing-dependencies}
@@ -592,7 +592,7 @@ In this log we can see that the `bosses_of_mass_destruction` mod prevented the g
 > Caused by: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException: Invalid descriptor on sodium-extra.mixins.json:toasts.MixinTutorialToast from mod sodium-extra->@Inject::draw(Lnet/minecraft/class_4587;Lnet/minecraft/class_374;JLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V! Expected (Lnet/minecraft/class_332;Lnet/minecraft/class_374;JLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V but found (Lnet/minecraft/class_4587;Lnet/minecraft/class_374;JLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V [INJECT Applicator Phase -> sodium-extra.mixins.json:toasts.MixinTutorialToast from mod sodium-extra -> Apply Injections ->  -> Inject -> sodium-extra.mixins.json:toasts.MixinTutorialToast from mod sodium-extra->@Inject::draw(Lnet/minecraft/class_4587;Lnet/minecraft/class_374;JLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V]
 >   at org.spongepowered.asm.mixin.injection.callback.CallbackInjector.inject(CallbackInjector.java:567)
 ```
-This time Fabric can't explicitly point us to the problematic mod, but we can recognize it from the error cause message (`Caused by:`): `Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [sodium-extra.mixins.json:toasts.MixinTutorialToast from mod sodium-extra]`.  
+This time Fabric can't explicitly point us to the problematic mod, but we can recognize it from the error cause message (`Caused by:`): `Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [sodium-extra.mixins.json:toasts.MixinTutorialToast from mod sodium-extra]`. \
 We can see that the problem is the `sodium-extra` mod (it owns `sodium-extra.mixins.json`). Most likely, it is made for a different game version - install the version of the mod for your game version or remove it.
 
 #### Error during gameplay {#fabric-runtime-error}
@@ -618,7 +618,7 @@ Fabric mods often require other mods or specific Fabric Loader versions. Usually
 >    - Mod 'GoProne' (goprone) 3.1.3 requires any version between 0.14.21 (inclusive) and 0.15- (exclusive) of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.15.7!
 >   at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:51) ~[fabric-loader-0.15.7.jar:?]
 ```
-You must install mods that meet the requirements of the installed mods.  
+You must install mods that meet the requirements of the installed mods. \
 For example, in this case a mod requires a version of Fabric Loader `0.14.25 or newer`, but `older than 0.15`, making it unsuitable for the version `0.15.7` you are using. Updating the mod or installing the required version of `fabric-loader` will fix this problem.
 
 #### Indium {#indium}
@@ -646,7 +646,7 @@ Caused by: java.util.zip.ZipException: zip END header not found
     at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1315)
 
 ```
-The `java.util.zip.ZipException: zip END header not found` error in the log signals that the game files and/or mods are corrupted. Use the "Force update" checkbox, re-download mods from CurseForge/Modrinth.  
+The `java.util.zip.ZipException: zip END header not found` error in the log signals that the game files and/or mods are corrupted. Use the "Force update" checkbox, re-download mods from CurseForge/Modrinth. \
 If the files turn out to be corrupted again after downloading, check your disk for errors.
 :::tip[Fabric and Quilt specifics]
 Fabric and Quilt store some data in the `.fabric` and `.cache` folders in the game folder. If the error points to a file from these folders, delete the folder - the loader will recreate it. Re-downloading such a file is useless
@@ -677,7 +677,7 @@ Use the "Force update" checkbox. If the files disappear again, check your [antiv
 > Caused by: com.electronwill.nightconfig.core.io.ParsingException: Not enough data available
 >   at com.electronwill.nightconfig.core.io.ParsingException.notEnoughData(ParsingException.java:22) ~[core-3.6.3.jar:?] {}
 ```
-Such errors are usually recognized by the presence of the word "config" or "settings" in the error. In this example you can see that the `flywheel-client.toml` config file of the `flywheel` mod is broken.  
-Such problems are solved very simply - by deleting the corresponding file from the `config` folder in the game folder, or by deleting the entire `config` folder - the mods will recreate their settings files.  
-If you have the original `config` folder (e.g. in the modpack archive), it is better to replace the current one with it.  
+Such errors are usually recognized by the presence of the word "config" or "settings" in the error. In this example you can see that the `flywheel-client.toml` config file of the `flywheel` mod is broken. \
+Such problems are solved very simply - by deleting the corresponding file from the `config` folder in the game folder, or by deleting the entire `config` folder - the mods will recreate their settings files. \
+If you have the original `config` folder (e.g. in the modpack archive), it is better to replace the current one with it. \
 Some mods keep part of their settings in the world folder: if the file is not in the `config` folder, look for it in `saves/<world name>/serverconfig`.

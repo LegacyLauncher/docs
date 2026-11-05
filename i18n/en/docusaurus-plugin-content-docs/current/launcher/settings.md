@@ -4,9 +4,9 @@ description: Detailed description of all launcher preferences
 # Launcher preferences
 
 ## How do I access the launcher preferences? {#accessing}
-1. Click the "Preferences" button (one with three stripes)
+1. Click the "Preferences" button (one with three stripes) \
     ![Preferences button](./img/menu-open.png)
-2. Select the "Launcher & game preferences" item
+2. Select the "Launcher & game preferences" item \
     ![Launcher & game preferences](./img/preferences-button.png)
 
 ## Preferences description {#description}
@@ -60,7 +60,7 @@ description: Detailed description of all launcher preferences
     * **Use discrete GPU**: launcher will force dedicated (high-performance) GPU to be used
 * **Ely.by skins**: use Ely.by skins in the game
     :::info
-    This option is respected only for "w/o password" accounts.  
+    This option is respected only for "w/o password" accounts. \
     This option was moved to "W/o password" account settings in "Manage accounts" menu in 161.0
     :::
 * **Suggest servers**: allows the launcher to add recommended servers to the in-game "Multiplayer" menu
@@ -126,8 +126,8 @@ description: Detailed description of all launcher preferences
         :::
         * **Update outdated SSL certificate storage**: Swaps the root certificate store in older versions of Java with an up-to-date one via Java arguments
         :::note
-        This function does not modify Java files.  
-        The certificate store used by the **current** (i.e., the one on which the Launcher is running) version of Java is considered up-to-date.  
+        This function does not modify Java files. \
+        The certificate store used by the **current** (i.e., the one on which the Launcher is running) version of Java is considered up-to-date. \
         This feature swaps the certificate store only if the current Java is **newer** than the Java used to launch the game.
         :::
     * **Optimized arguments**: in addition to specified **Java arguments** adds built-in Java optimization arguments
@@ -153,7 +153,7 @@ description: Detailed description of all launcher preferences
             :::
     * **Minecraft arguments**: Minecraft arguments, e.g. `--server` or `--fullscreen`
         :::tip[How do you figure out where to put the argument?]
-        JVM arguments usually start with **one** hyphen.  
+        JVM arguments usually start with **one** hyphen. \
         Minecraft arguments usually start with **two** hyphens.
         :::
     * **Wrapper command**: command used to "wrap" Minecraft. Useful for tools like MangoHud or GameMode

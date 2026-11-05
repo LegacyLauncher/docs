@@ -16,8 +16,8 @@ You don't have to install Quilt manually. There are versions with pre-installed 
     2. Select game and Quilt versions
     3. Make sure "Location" path points to same game folder as in the launcher settings
         :::info[How to find the game folder?]
-        Start Legacy Launcher and click the button with the folder icon.  
-        *If you have the "Subfolders" feature enabled, select "Open Minecraft root folder"*.  
+        Start Legacy Launcher and click the button with the folder icon. \
+        *If you have the "Subfolders" feature enabled, select "Open Minecraft root folder"*. \
         You can also find it in the launcher settings, in the "Game folder" field
         :::
     4. Press "Install"

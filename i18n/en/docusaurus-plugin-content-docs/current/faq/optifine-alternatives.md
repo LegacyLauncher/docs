@@ -3,7 +3,7 @@ description: Replacing OptiFine
 sidebar_position: 4
 ---
 # OptiFine Alternatives
-OptiFine is an extremely unstable mod that has a huge number of incompatibility problems with other modifications.  
+OptiFine is an extremely unstable mod that has a huge number of incompatibility problems with other modifications. \
 This page contains mods that can replace the functionality of OptiFine.
 
 ## Optimization {#optimization}
@@ -42,7 +42,7 @@ This page contains mods that can replace the functionality of OptiFine.
 * Iris ([Fabric](https://modrinth.com/mod/iris), [Forge](https://modrinth.com/mod/oculus)) - Sodium addon, supports shaders in OptiFine compatible format
     * Vulkanite ([Fabric](https://modrinth.com/mod/vulkanite-mod)) - Iris addon which adds support for **hardware-accelerated raytracing** in Minecraft
         :::danger[Warning!]
-        Vulkanite requires a graphics card with hardware raytracing support, such as NVIDIA RTX.  
+        Vulkanite requires a graphics card with hardware raytracing support, such as NVIDIA RTX. \
         Also, this mod is **very early in development** and **is extremely unstable**.
         :::
 * Canvas ([Fabric/Quilt](https://modrinth.com/mod/canvas)) - an alternative rendering engine for Minecraft with custom (non-OptiFine-compatible) shaders support

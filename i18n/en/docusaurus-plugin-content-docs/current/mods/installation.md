@@ -2,10 +2,10 @@
 description: How to install mods?
 ---
 # Mods Installation
-Modifications (aka mods) are custom add-ons that extend the basic features of the game by adding new blocks, tools, weapons, mobs, dimensions and more.  
+Modifications (aka mods) are custom add-ons that extend the basic features of the game by adding new blocks, tools, weapons, mobs, dimensions and more. \
 This guide describes how you can install mods.
 :::warning
-The screenshots in this guide are slightly outdated and are missing localization.  
+The screenshots in this guide are slightly outdated and are missing localization. \
 If you have a chance, please help us [update](https://github.com/LegacyLauncher/docs/pulls) this guide!
 :::
 :::tip[Modpacks installation]
@@ -29,15 +29,15 @@ To keep mods, worlds and settings for different versions of the game and mod loa
     You can install any version of [Forge](./forge), [NeoForge](./neoforge), [Fabric](./fabric) or [Quilt](./quilt) yourself.
     :::
     :::warning
-    Mods for NeoForge *may not* be compatible with Forge.  
-    Mods for Quilt *may not* be compatible with Fabric.  
+    Mods for NeoForge *may not* be compatible with Forge. \
+    Mods for Quilt *may not* be compatible with Fabric. \
     Mods for Fabric/Quilt and Forge/NeoForge **are not** compatible with each other.
     :::
     ![Launcher window with the selected Forge version](./img/mods_installforge.png)
-3. Make sure the version is able to launch.
+3. Make sure the version is able to launch. \
     ![Launched Minecraft](./img/mods_forgeinstalled.png)
     :::warning[Got a crash?]
-    Make sure you don't have mods for other game versions or modloaders installed.  
+    Make sure you don't have mods for other game versions or modloaders installed. \
     Still not launching? You can try our [self-repair guide](../troubleshooting/self-repair) or [contact technical support](../support/game)
     :::
 
@@ -46,16 +46,16 @@ To keep mods, worlds and settings for different versions of the game and mod loa
     :::tip[Mod download sources]
     We recommend using official mod sources: [Modrinth](https://modrinth.com/mods) and [CurseForge](https://www.curseforge.com/minecraft/search?class=mc-mods)
     :::
-2. Start Legacy Launcher and open game folder
+2. Start Legacy Launcher and open game folder \
     ![Opening the game folder](./img/mods_openclientdir.png)
-3. Go to mods folder
+3. Go to mods folder \
     ![Going to the mods folder](./img/mods_openedclientdir.png)
-4. Place downloaded mods in the mods folder
+4. Place downloaded mods in the mods folder \
     ![Mod file in the mods folder](./img/mods_modinmodsfolder.png)
-5. Launch the game to make sure game is able to run
+5. Launch the game to make sure game is able to run \
     ![Game main menu](./img/mods_modingame.png)
     :::note
-    You can see that the number of mods that Forge ModLoader has loaded has increased (there were 4 mods, now there are 5). You can also see the modification in the list, which can be accessed by clicking on the "Mods" button in the main menu of the game.
+    You can see that the number of mods that Forge ModLoader has loaded has increased (there were 4 mods, now there are 5). You can also see the modification in the list, which can be accessed by clicking on the "Mods" button in the main menu of the game. \
     ![Installed mod in the mods list](./img/mods_modiningamemodlist.png)
     :::
 6. Done! You can now start using mods
@@ -70,8 +70,8 @@ Many unofficial mod sites pack mods into an extra archive to save storage space.
 This mistake often follows from the previous one: the mod jar was extracted by mistake. Solution: pack extracted files to zip archive and rename `.zip` to `.jar`... Or re-download mod.
 
 ### Missing dependencies {#dependencies}
-For a long time mod developers have been using other mods to create their own. This results in mods not working without the mod it was created with (i.e. without *dependency*).  
-One who does not know this may simply forget to install the dependencies necessary for the mod to work. The result can be a broken game client or a warning message in the game after loading.
+For a long time mod developers have been using other mods to create their own. This results in mods not working without the mod it was created with (i.e. without *dependency*). \
+One who does not know this may simply forget to install the dependencies necessary for the mod to work. The result can be a broken game client or a warning message in the game after loading. \
 ![Mod requires a missing dependency to be installed](./img/mods_coreismissed.png)
 It's easy enough to solve this problem: just download the missing mod version stated in the message (in the example it's `CodeChickenLib 2.6.0`).
 

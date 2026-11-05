@@ -20,8 +20,8 @@ We recommend that you use the "Mirror" button instead of the "Download" so you d
 5. Install OptiFine. It will be installed as separate version
     1. Make sure the game folder path in the "Folder" field is the same as in the launcher settings
         :::info[How to find the game folder?]
-        Start Legacy Launcher and click the button with the folder icon.  
-        *If you have the "Subfolders" feature enabled, select "Open Minecraft root folder"*.  
+        Start Legacy Launcher and click the button with the folder icon. \
+        *If you have the "Subfolders" feature enabled, select "Open Minecraft root folder"*. \
         You can also find it in the launcher settings, in the "Game folder" field
         :::
     2. Click "Install" button
@@ -51,8 +51,8 @@ OptiFine is a highly unstable, highly invasive modification. Consider using [alt
 6. Install OptiFine to mods folder
     1. Make sure the game folder path in the "Folder" field is the same as in the launcher settings
         :::info[How to find the game folder?]
-        Start Legacy Launcher and click the button with the folder icon.  
-        *If you have the "Subfolders" feature enabled, select "Open Minecraft root folder"*.  
+        Start Legacy Launcher and click the button with the folder icon. \
+        *If you have the "Subfolders" feature enabled, select "Open Minecraft root folder"*. \
         You can also find it in the launcher settings, in the "Game folder" field
         :::
     2. Click "Extract" button

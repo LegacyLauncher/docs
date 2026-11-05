@@ -11,8 +11,8 @@ If this guide helped you identify the cause of your issue, please do not contact
 ## Launcher Issues {#launcher-issues}
 
 ### All Worlds, Accounts, and Versions Are Gone! {#config-reset}
-This happens when the launcher's configuration file is corrupted.  
-All your data is still where it was — the launcher is just looking for it in a different location (the default folder).  
+This happens when the launcher's configuration file is corrupted. \
+All your data is still where it was — the launcher is just looking for it in a different location (the default folder). \
 Go to the [launcher settings](../launcher/settings.md) and specify the correct path to the game folder.
 :::tip[How to Find the Game Folder]
 Recall the name of one of your versions or worlds and use Windows search.
@@ -28,11 +28,11 @@ We recommend checking your hard drive for errors and trying the "Force update" o
 :::
 
 ### Launcher Takes a Long Time to Start! {#slow-launch}
-This is a known issue that we’ve been working to resolve for a while. It usually happens when one of the launcher's main mirrors is unavailable.  
+This is a known issue that we’ve been working to resolve for a while. It usually happens when one of the launcher's main mirrors is unavailable. \
 Try [this guide](./slow-launch.md) or use a VPN.
 
 ### I Can't Launch the Launcher Without Internet! {#no-internet}
-Please save the diagnostic report — [this guide](../support/launcher) might help you, and you can send it to us later.  
+Please save the diagnostic report — [this guide](../support/launcher) might help you, and you can send it to us later. \
 Additionally, completely disconnecting from the internet (unplugging the cable or disabling Wi-Fi) might help.
 
 ### I Can't Install New versions! {#no-versions}
@@ -42,13 +42,13 @@ Check launcher preferences and make sure the "Remote from server" checkbox is **
 The game doesn't crash but shows an error when trying to enter a server or single-player world?
 
 ### Check your nickname {#nickname}
-Different game versions have different nickname requirements. The most universal nickname consists of **no more than 16 characters, using Latin letters, numbers, and the characters `_-.`.**  
+Different game versions have different nickname requirements. The most universal nickname consists of **no more than 16 characters, using Latin letters, numbers, and the characters `_-.`.** \
 An invalid nickname may prevent you from joining servers or even single-player games.
 
 ### Check your internet connection {#connection}
 Can't connect to a server? Can't log into your account? Is the game downloading slowly? Try enabling a VPN and checking if the issue persists. If it resolves - the problem might be with your ISP (blocking issues?).
 :::tip
-In some cases, software designed to bypass blocks may **interfere** with the game. Try disabling proxies, VPNs, GoodbyeDPI, Zapret, and other "unblockers" or "accelerators".  
+In some cases, software designed to bypass blocks may **interfere** with the game. Try disabling proxies, VPNs, GoodbyeDPI, Zapret, and other "unblockers" or "accelerators". \
 Special mention goes to SafeIP - **do not use it, as it causes game crashes and is very hard to remove!**
 :::
 :::note
@@ -56,7 +56,7 @@ Try connecting to a different multiplayer server. If the problem occurs **on all
 :::
 
 ### Antivirus Software {#av-software}
-Antiviruses often cause issues.  
+Antiviruses often cause issues. \
 Is the game download stuck at a specific file count? Can't launch or update the launcher? Likely, antivirus software is interfering. Temporarily disable it or add the launcher to its exceptions.
 
 ### Crashes when installing a resource pack? {#server-resources}
@@ -69,8 +69,8 @@ Many servers designed for multiple game versions flood the game with errors by s
 Game crashing? "Something went wrong"? Here's your guide!
 
 ### Check selected locale {#wrong-locale}
-Many Minecraft versions and mods will crash when Regional Settings are using "uncommon" numerals like Mashriki (`٠, ١, ٢, ٣, ٤, ٥, ٦, ٧, ٨, ٩`). One should change Regional settings to use "common" Arabic symbols.  
-**For Windows users**: Open **Region Settings** in the **Settings** app and go to "Regional Format" (for older Windows versions: Open **Region** settings in **Control Panel**), then change it to an appropriate option. Make sure newly selected option uses the "standard" Arabic numerals (`0, 1, 2, 3, 4, 5, 6, 7, 8, 9`). A reboot may be required.  
+Many Minecraft versions and mods will crash when Regional Settings are using "uncommon" numerals like Mashriki (`٠, ١, ٢, ٣, ٤, ٥, ٦, ٧, ٨, ٩`). One should change Regional settings to use "common" Arabic symbols. \
+**For Windows users**: Open **Region Settings** in the **Settings** app and go to "Regional Format" (for older Windows versions: Open **Region** settings in **Control Panel**), then change it to an appropriate option. Make sure newly selected option uses the "standard" Arabic numerals (`0, 1, 2, 3, 4, 5, 6, 7, 8, 9`). A reboot may be required.
 
 ### Check connected input devices {#input-devices}
 Some input devices, such as steering wheels, gamepads, joysticks may cause Minecraft crashes due to GLFW issues
@@ -97,7 +97,7 @@ Using [version-specific subfolders](../launcher/subfolders.md) helps avoid such 
 Most Minecraft versions require a specific Java version. Try launching Minecraft using the "Recommended" Java setting in the launcher preferences
 
 ### Removing duplicate mods {#remove-duplicates}
-Most mod loaders fail when encountering multiple versions of the same mod. Ensure each mod is installed only once.  
+Most mod loaders fail when encountering multiple versions of the same mod. Ensure each mod is installed only once. \
 In older game versions, mods could be installed in both the `mods` folder and `mods/version-number`. **Check both folders**.
 :::note[BetterPVP and Xaero Minimap]
 BetterPVP already includes Xaero Minimap, and these mods will conflict.
@@ -110,7 +110,7 @@ Some mods for older versions (like 1.7.10 and 1.12.2) may automatically download
 :::
 
 ### Removing OptiFine {#remove-optifine}
-Yes, this solution is so common we've given it its own section.  
+Yes, this solution is so common we've given it its own section. \
 Many mods conflict with OptiFine. The first step is to remove OptiFine (choose a version without OptiFine and delete its files from the mods folder) and see if the game launches. If you're using Fabric - **do not use OptiFine or OptiFabric!**
 :::note
 If this step didn't help, don't reinstall OptiFine. Continue troubleshooting without it. You can always try reintroducing OptiFine after identifying the problem source (but we recommend using [alternatives](../faq/optifine-alternatives.md)).

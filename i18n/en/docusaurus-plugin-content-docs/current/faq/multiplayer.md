@@ -53,25 +53,25 @@ This guide does not cover the use of such programs at this time. If you have the
 :::
 
 ## Port forwarding {#port-forwarding}
-If you have a "public" ("external") IP address, you can try to open the world to the network by forwarding the port received by the game when opening the world to LAN.  
+If you have a "public" ("external") IP address, you can try to open the world to the network by forwarding the port received by the game when opening the world to LAN. \
 This guide does not cover this method, as the necessary steps depend greatly on the model of router you are using. As a rule, you need to find the NAT or "port forwarding" settings, enter the IP address or MAC address of your computer and enter the required port numbers.
 
 ### Port tunneling {#port-tunneling}
 There are some services that allow you to publish your port on one of their public IPs. You can use them to host your Minecraft world/server. Known services are [PlayIt](https://playit.gg) and [Ngrok](https://ngrok.com/)
 
 ## Free hosting {#free-hosting}
-You can try to create a public server for yourself and your friends on free hosting services. Typically, free hosting services are very limited in resources, so the game on such servers will be associated with discomfort and lags. Also, in most cases, you will not be able to install an interesting modpack because of the limited resources of the server. In addition, some free hosts limit the uptime, and your server will be forcibly stopped after some time after launching.  
-The list of free hosting sites we know of: [FalixNodes](https://falixnodes.net/), [Aternos](https://aternos.org/), [server.pro](https://server.pro/), [Minehut](https://minehut.com/).  
+You can try to create a public server for yourself and your friends on free hosting services. Typically, free hosting services are very limited in resources, so the game on such servers will be associated with discomfort and lags. Also, in most cases, you will not be able to install an interesting modpack because of the limited resources of the server. In addition, some free hosts limit the uptime, and your server will be forcibly stopped after some time after launching. \
+The list of free hosting sites we know of: [FalixNodes](https://falixnodes.net/), [Aternos](https://aternos.org/), [server.pro](https://server.pro/), [Minehut](https://minehut.com/). \
 Instructions on how to set up the server can usually be found on the hosting site itself.
 
 ## Paid hosting {#paid-hosting}
-If you and your friends don't mind spending some money on hosting, you can find a paid game hosting service to suit your needs and run a server on it. As a rule, you will have full access to the server files, and can install any set of mods (provided that you have enough money to pay for a server of suitable capacity). The advantages of this method are 24/7 uptime and independence from the players' hardware.  
+If you and your friends don't mind spending some money on hosting, you can find a paid game hosting service to suit your needs and run a server on it. As a rule, you will have full access to the server files, and can install any set of mods (provided that you have enough money to pay for a server of suitable capacity). The advantages of this method are 24/7 uptime and independence from the players' hardware. \
 You can find suitable paid Minecraft hosting on the web. As a rule, hosting already has instructions on how to set up the server and they are unnecessary in this guide.
 
 ## Dedicated server {#dedicated-server}
-This is the most complicated option for real pros!  
-A dedicated server can be run on your home PC or on a rented server. You can create it only for your local network (for example, to improve game client performance), or open for friends through a virtual LAN or public IP.  
-To run a dedicated game server, you will need to [download the server itself](https://www.minecraft.net/download/server) and configure it according to [this article](https://minecraft.wiki/w/Tutorials/Setting_up_a_server).  
+This is the most complicated option for real pros! \
+A dedicated server can be run on your home PC or on a rented server. You can create it only for your local network (for example, to improve game client performance), or open for friends through a virtual LAN or public IP. \
+To run a dedicated game server, you will need to [download the server itself](https://www.minecraft.net/download/server) and configure it according to [this article](https://minecraft.wiki/w/Tutorials/Setting_up_a_server). \
 Most [modloaders](/tags/modloader) support installation as a game server.
 
 ## Common issues {#troubleshooting}
@@ -92,7 +92,7 @@ Perhaps you should think about using [Ely.by authorization for servers](https://
 
 ### Connection refused: no further information, Connection timeout {#connection-refused}
 If this problem occurs on all servers, it means that something on your PC (antivirus or firewall) is blocking the game from connecting to the servers. Try temporarily disabling antivirus and firewall or add Java to their exceptions.
-In addition, this problem can be caused by some VPNs/proxy (for example, SafeIP) and GoodbyeDPI.  
+In addition, this problem can be caused by some VPNs/proxy (for example, SafeIP) and GoodbyeDPI. \
 If the problem appears only with a particular server, it is probably a problem on its side - contact the server administration for further help.
 
 ### We are on the same LAN, but I can't see my friend's world! {#invisible-lan}
@@ -112,7 +112,7 @@ It is not uncommon for several different users from the same apartment building,
 :::
 
 ### The server asks me for my password, but I don't know any! {#server-password}
-Most cracked servers use plugins to protect user accounts.  
+Most cracked servers use plugins to protect user accounts. \
 If you are logging into the server **for the first time** and it asks you to *enter password* - most likely someone has already registered on this server under your nickname. Change your nickname or contact the server administration.
 
 ### I've been banned on the server! {#server-banned}
@@ -122,7 +122,7 @@ Contact the server administration. We provide the game itself and are in no way 
 Contact the server administration. We provide the game itself and are in no way connected with any game servers. You can also ask your bank for a chargeback.
 
 ### I logged on to the server and it's all gone! {#server-wipe}
-Check that you are logging into the server from the correct account.  
+Check that you are logging into the server from the correct account. \
 If the account is correct, contact the server administration for further assistance.
 
 ### The other player is bullying me! {#server-griefing}
